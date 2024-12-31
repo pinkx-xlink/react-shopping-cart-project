@@ -31,7 +31,7 @@ function Navbar() {
             <div className="navbar-container">
                 {/* replaces <a> tag  */}
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                  TRVL 
+                  OnlineShop 
                   <i className="fab fa-typo3" />   
                 </Link>
 
