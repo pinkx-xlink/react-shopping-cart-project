@@ -11,13 +11,13 @@ function Cards() {
             <div className="cards__wrapper">
                 <ul className="cards__items">
                     <CardItem 
-                    src="/images/Img9.jpg"
+                    src="/images/Filler.png"
                     text="Explore the hidden waterfall deep within the Amazon Jungle"
                     label="Adventure"
                     path="/services"
                     />
                      <CardItem 
-                    src="/images/Img9.jpg"
+                    src="/images/Filler.png"
                     text="Explore the hidden waterfall deep within the Amazon Jungle"
                     label="Adventure"
                     path="/services"
@@ -26,19 +26,19 @@ function Cards() {
                 {/* copy and paste card component */}
                 <ul className="cards__items">
                     <CardItem 
-                    src="/images/Img2.jpg"
+                    src="/images/Filler.png"
                     text="Travel through the Islands of Balie in a Private Cruise"
                     label="Luxury"
                     path="/services"
                     />
                      <CardItem 
-                    src="/images/Img2.jpg"
+                    src="/images/Filler.png"
                     text="Travel through the Islands of Balie in a Private Cruise"
                     label="Luxury"
                     path="/services"
                     />
                      <CardItem 
-                    src="/images/Img2.jpg"
+                    src="/images/Filler.png"
                     text="Travel through the Islands of Balie in a Private Cruise"
                     label="Luxury"
                     path="/services"
