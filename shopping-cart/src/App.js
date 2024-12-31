@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-dom';
 import Home from './components/pages/Home';
+import Shop from './components/pages/Shop';
 // import Products from './components/pages/Products';
 // import Services from './components/pages/Services';
 // import SignUp from './components/pages/SignUp';
@@ -14,8 +15,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact element={< Home />}></Route>
-          {/* <Route path='/services' exact element={< Services />}></Route>
-          <Route path='/products' exact element={< Products />}></Route>
+          <Route path='/shop' exact element={< Shop />}></Route>
+          {/* <Route path='/products' exact element={< Products />}></Route>
           <Route path='/sign-up' exact element={< SignUp />}></Route> */}
         </Switch>
       </Router>
