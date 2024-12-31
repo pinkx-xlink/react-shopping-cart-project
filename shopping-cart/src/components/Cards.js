@@ -14,13 +14,13 @@ function Cards() {
                     src="/images/Filler.png"
                     text="Explore the hidden waterfall deep within the Amazon Jungle"
                     label="Adventure"
-                    path="/services"
+                    path="/shop"
                     />
                      <CardItem 
                     src="/images/Filler.png"
                     text="Explore the hidden waterfall deep within the Amazon Jungle"
                     label="Adventure"
-                    path="/services"
+                    path="/shop"
                     />
                 </ul>
                 {/* copy and paste card component */}
@@ -29,19 +29,19 @@ function Cards() {
                     src="/images/Filler.png"
                     text="Travel through the Islands of Balie in a Private Cruise"
                     label="Luxury"
-                    path="/services"
+                    path="/shop"
                     />
                      <CardItem 
                     src="/images/Filler.png"
                     text="Travel through the Islands of Balie in a Private Cruise"
                     label="Luxury"
-                    path="/services"
+                    path="/shop"
                     />
                      <CardItem 
                     src="/images/Filler.png"
                     text="Travel through the Islands of Balie in a Private Cruise"
                     label="Luxury"
-                    path="/services"
+                    path="/shop"
                     />
                 </ul>
             </div>
