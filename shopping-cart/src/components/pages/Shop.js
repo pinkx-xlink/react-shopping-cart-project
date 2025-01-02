@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../App.css';
 import Cards from '../Cards';
 
 export default function Shop() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (el) => {
+    setCart([...cart, el]);
+  };
+  
   const items = [
     {
       id: 1,
@@ -20,6 +26,13 @@ export default function Shop() {
       price: 51,
     },
   ];
+
+  const listItems = items.map((el) => (
+    <div key={el.id}>
+      {`${el.name}: $${el.price}`}
+      <input type="submit" value="add" onClick={() => addToCart(el)} />
+    </div>
+  ))
     return (
         <>
           <h1 className='shop'>SHOP</h1>
