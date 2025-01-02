@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../App.css';
 import Cards from '../Cards';
 
 export default function Shop() {
   const [cart, setCart] = useState([]);
-
-  const addToCart = (el) => {
-    setCart([...cart, el]);
-  };
+  const [cartTotal, setCartTotal] = useState(0);
 
   const items = [
     {
@@ -33,6 +30,22 @@ export default function Shop() {
       <input type="submit" value="add" onClick={() => addToCart(el)} />
     </div>
   ))
+
+  useEffect(() => {
+    total();
+  }, [cart]);
+  
+  const total = () => {
+    let totalVal = 0;
+    for (let i = 0; i < cart.length; i++) {
+      totalVal += cart[i].price;
+    }
+    setCartTotal(totalVal);
+  };
+
+  const addToCart = (el) => {
+    setCart([...cart, el]);
+  };
 
   const removeFromCart = (el) => {
     let hardCopy = [...cart];
