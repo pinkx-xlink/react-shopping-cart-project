@@ -27,7 +27,6 @@ const Products = () => {
         .catch((e) => console.log(e))
         .finally(() => setLoading(false));
     }, []);
-
     
 const items = data
 
