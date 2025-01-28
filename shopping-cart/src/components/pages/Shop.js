@@ -27,27 +27,11 @@ const Shop = () => {
   // Refactor this to use res.data products.id, title, and 
   // price instead of static array
 
-  const items = [
-    {
-      id: 1,
-      name: "overwatch",
-      price: 20,
-    },
-    {
-      id: 2,
-      name: "minecraft",
-      price: 32,
-    },
-    {
-      id: 3,
-      name: "fortnite",
-      price: 51,
-    },
-  ];
+  const items = data
 
   const listItems = items.map((el) => (
     <div key={el.id}>
-      {`${el.name}: $${el.price}`}
+      {`${el.title}: $${el.price}`}
       <input type="submit" value="add" onClick={() => addToCart(el)} />
     </div>
   ))
@@ -76,7 +60,7 @@ const Shop = () => {
 
   const cartItems = cart.map((el) => (
     <div key={el.id}>
-      {`${el.name}: $${el.price}`}
+      {`${el.title}: $${el.price}`}
       <input type="submit" value="remove" onClick={() => removeFromCart(el)} />
     </div>
   ));
