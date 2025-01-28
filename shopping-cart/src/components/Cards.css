@@ -1,14 +1,13 @@
 .product-cards-container {
   margin-top: 70px;
   display: grid;
-  grid-template-columns: repeat(2, 450px);
-  grid-template-rows: repeat(1, 350px);
-  grid-gap: 5px;
-  align-items: center;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(1, 300px);
+  align-items:end;
 }
 
 .cards {
-    padding: 4rem;
+    padding: 1rem;
     background: #fff;
     text-align: center;
   }
