@@ -81,8 +81,9 @@ const cartItems = cart.map((product) => (
                 //  <Link className="cards__item__link" to={props.path}></Link>
                 <div key={product.id} className="card">
                     <Link className="link__to__shop" to="/shop"><img src={product.image} alt="#"/></Link>
-                    <div className="card-description">{product.title}
-                        <h6> ${product.price} </h6>
+                    <div className="card-description">
+                        <h2>{product.title}</h2>
+                        <h2> ${product.price} </h2>
                         <h6> Descrption: {product.description} </h6>
                         <input input type="submit" value="add" onClick={() => addToCart(product)} />
                     </div>
