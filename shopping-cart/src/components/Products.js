@@ -85,6 +85,7 @@ const cartItems = cart.map((el) => (
                     <div className="card-description">{product.title}
                         <h6> ${product.price} </h6>
                         <h6> Descrption: {product.description} </h6>
+                        <button onClick={addToCart}>Add to Cart</button>
                     </div>
                 </div>   
             ))}
