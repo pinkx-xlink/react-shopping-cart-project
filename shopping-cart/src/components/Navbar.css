@@ -104,6 +104,7 @@
   
     .nav-links {
       text-align: center;
+      /* color: purple; */
       padding: 2rem;
       width: 100%;
       display: table;
