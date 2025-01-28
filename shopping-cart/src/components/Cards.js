@@ -40,7 +40,7 @@ const Cards = () => {
 {data.slice(0, 4).map((product)=> (
     
     <div key={product.id} className="cards">
-        <h2>{product.title}</h2>
+        {/* <h2>{product.title}</h2> */}
         <div className="cards__container">
             <div className="cards__wrapper">
                 <ul className="cards__items">
