@@ -1,6 +1,15 @@
+.product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .cards {
     padding: 4rem;
     background: #fff;
+    text-align: center;
   }
 
   h1 {

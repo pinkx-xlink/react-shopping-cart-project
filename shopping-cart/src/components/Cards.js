@@ -36,7 +36,9 @@ const Cards = () => {
             </div>
         )}
 
+<div className='product-cards-container'>
 {data.slice(0, 4).map((product)=> (
+    
     <div key={product.id} className="cards">
         <h2>{product.title}</h2>
         <div className="cards__container">
@@ -52,7 +54,9 @@ const Cards = () => {
             </div>
         </div>
     </div>
+    
     ))}
+    </div>
     </div>
     </>
   )
