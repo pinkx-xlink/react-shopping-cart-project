@@ -25,7 +25,9 @@ const Cards = () => {
     }, []);
     
   return (
+    <>
 
+    <h1>Check out our top picks for the season</h1>
     <div className='products-container'>
         {loading && (
             <div> 
@@ -36,7 +38,7 @@ const Cards = () => {
 
 {data.slice(0, 4).map((product)=> (
     <div key={product.id} className="cards">
-        <h1>Check out our top picks for the season</h1>
+        <h2>{product.title}</h2>
         <div className="cards__container">
             <div className="cards__wrapper">
                 <ul className="cards__items">
@@ -52,7 +54,7 @@ const Cards = () => {
     </div>
     ))}
     </div>
-
+    </>
   )
 }
 
