@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import '../App.css';
 import axios from "axios";
+import './Products.css';
 
 const Products = () => {
     const [loading, setLoading] = useState(false);
