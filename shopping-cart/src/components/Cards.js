@@ -34,7 +34,7 @@ const Cards = () => {
             </div>
         )}
 
-{data.map((product)=> (
+{data.slice(0, 4).map((product)=> (
     <div key={product.id} className="cards">
         <h1>Check out our top picks for the season</h1>
         <div className="cards__container">
@@ -44,39 +44,6 @@ const Cards = () => {
                     src={product.image}
                     text={product.title}
                     label="Beauty"
-                    path="/shop"
-                    />
-                    <CardItem 
-                    src={product.image}
-                    text={product.title}
-                    label="Womens Fashion"
-                    path="/shop"
-                    />
-                     <CardItem 
-                    src={product.image}
-                    text={product.title}
-                    label="Men's Fashion"
-                    path="/shop"
-                    />
-                </ul>
-                {/* copy and paste card component */}
-                <ul className="cards__items">
-                    <CardItem 
-                    src="images/Filler.png"
-                    text="Item 4 description text:"
-                    label="Bedroom Decor"
-                    path="/shop"
-                    />
-                     <CardItem 
-                    src="images/Filler.png"
-                    text="Item 5 description text:"
-                    label="Home Decor"
-                    path="/shop"
-                    />
-                     <CardItem 
-                    src="images/Filler.png"
-                    text="Item 6 description text:"
-                    label="Bathroom Decor"
                     path="/shop"
                     />
                 </ul>
