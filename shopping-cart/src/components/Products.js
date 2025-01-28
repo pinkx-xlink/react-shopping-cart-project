@@ -31,10 +31,10 @@ const Products = () => {
     
 const items = data
 
-const listItems = items.map((el) => (
-  <div key={el.id}>
-    {`${el.title}: $${el.price}`}
-    <input type="submit" value="add" onClick={() => addToCart(el)} />
+const listItems = items.map((product) => (
+  <div key={product.id}>
+    {`${product.title}: $${product.price}`}
+    <input type="submit" value="add" onClick={() => addToCart(product)} />
   </div>
 ))
 
@@ -50,20 +50,20 @@ const total = () => {
   setCartTotal(totalVal);
 };
 
-const addToCart = (el) => {
-  setCart([...cart, el]);
+const addToCart = (product) => {
+  setCart([...cart, product]);
 };
 
-const removeFromCart = (el) => {
+const removeFromCart = (product) => {
   let hardCopy = [...cart];
-  hardCopy = hardCopy.filter((cartItem) => cartItem.id !== el.id);
+  hardCopy = hardCopy.filter((cartItem) => cartItem.id !== product.id);
   setCart(hardCopy);
 };
 
-const cartItems = cart.map((el) => (
-  <div key={el.id}>
-    {`${el.title}: $${el.price}`}
-    <input type="submit" value="remove" onClick={() => removeFromCart(el)} />
+const cartItems = cart.map((product) => (
+  <div key={product.id}>
+    {`${product.title}: $${product.price}`}
+    <input type="submit" value="remove" onClick={() => removeFromCart(product)} />
   </div>
 ));
 
@@ -85,7 +85,7 @@ const cartItems = cart.map((el) => (
                     <div className="card-description">{product.title}
                         <h6> ${product.price} </h6>
                         <h6> Descrption: {product.description} </h6>
-                        <button onClick={addToCart}>Add to Cart</button>
+                        <input input type="submit" value="add" onClick={() => addToCart(product)} />
                     </div>
                 </div>   
             ))}
