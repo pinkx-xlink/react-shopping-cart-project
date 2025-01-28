@@ -1,6 +1,16 @@
-.product-cards-container {
-  display: grid;
-  grid-template-columns: repeat(2, 550px);
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-container {
+  width: 80%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
 }
 
 .card {
