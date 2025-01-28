@@ -66,8 +66,8 @@ const Products = () => {
 
   return (
     <>
-      <div>{cartItems}</div>
-      <p>Total: ${cartTotal}</p>
+      <h6>{cartItems}</h6>
+      <h5>Total: ${cartTotal}</h5>
       <div className='products-container'>
           {loading && (
             <div> 
