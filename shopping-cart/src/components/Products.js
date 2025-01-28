@@ -38,8 +38,8 @@ const Products = () => {
                             <ul className="cards__items">
                             <CardItem 
                                 src="images/Filler.png"
-                                text={product.description}
-                                label="Beauty"
+                                text={product.title}
+                                label={product.price}
                                 path="/shop"
                                 />
                             </ul>
@@ -66,9 +66,9 @@ const Products = () => {
                             </ul> */}
                         </div>
                     </div>
-                    <p> {product.price} </p>
+                    {/* <p> {product.price} </p>
                     <p> {product.title} </p>
-                    <p> {product.description} </p>
+                    <p> {product.description} </p> */}
                 </div>
             ))}
         </div>
