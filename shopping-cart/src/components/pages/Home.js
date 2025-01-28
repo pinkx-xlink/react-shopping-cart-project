@@ -1,12 +1,12 @@
 import React from 'react'
 import Welcome from '../Welcome'
-import Products from '../Products';
+import Cards from '../Cards';
 
 function Home() {
     return (
         <>
             <Welcome />
-            <Products />
+            <Cards />
         </>
     )
 }
