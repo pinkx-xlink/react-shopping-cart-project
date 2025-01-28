@@ -11,10 +11,10 @@
     border: 1px solid black;
     width: 200px;
 } */
-
-.cards {
+.product-card {
     padding: 4rem;
     background: #fff;
+    max-width: 550px;
   }
 
   h1 {
