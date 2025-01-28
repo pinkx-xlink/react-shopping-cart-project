@@ -7,6 +7,9 @@ import Cards from "./Cards";
 import { Link } from "react-router-dom";
 
 const Products = () => {
+    const [cart, setCart] = useState([]);
+    const [cartTotal, setCartTotal] = useState(0);
+    
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState([]);
 
@@ -24,7 +27,49 @@ const Products = () => {
         .catch((e) => console.log(e))
         .finally(() => setLoading(false));
     }, []);
+
+    
+const items = data
+
+const listItems = items.map((el) => (
+  <div key={el.id}>
+    {`${el.title}: $${el.price}`}
+    <input type="submit" value="add" onClick={() => addToCart(el)} />
+  </div>
+))
+
+useEffect(() => {
+  total();
+}, [cart]);
+
+const total = () => {
+  let totalVal = 0;
+  for (let i = 0; i < cart.length; i++) {
+    totalVal += cart[i].price;
+  }
+  setCartTotal(totalVal);
+};
+
+const addToCart = (el) => {
+  setCart([...cart, el]);
+};
+
+const removeFromCart = (el) => {
+  let hardCopy = [...cart];
+  hardCopy = hardCopy.filter((cartItem) => cartItem.id !== el.id);
+  setCart(hardCopy);
+};
+
+const cartItems = cart.map((el) => (
+  <div key={el.id}>
+    {`${el.title}: $${el.price}`}
+    <input type="submit" value="remove" onClick={() => removeFromCart(el)} />
+  </div>
+));
+
     return (
+        <>
+        <div>{cartItems}</div>
         <div className='products-container'>
             {loading && (
                 <div> 
@@ -44,6 +89,7 @@ const Products = () => {
                 </div>   
             ))}
         </div>
+        </>
     );
 };
 
