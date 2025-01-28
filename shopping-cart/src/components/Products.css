@@ -1,0 +1,19 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.card {
+  width: 350px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+img {
+  width: 330px;
+}
