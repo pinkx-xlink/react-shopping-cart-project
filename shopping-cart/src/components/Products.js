@@ -32,48 +32,14 @@ const Products = () => {
             )}
 
             {data.map((product)=> (
-                <div className="card">
-                {/* <div key={product.id} className="product-card"> */}
-                    <div className="cards__container">
-                        <div className="cards__wrapper">
-                            <ul className="cards__items">
-                            <CardItem 
-                                src="images/Filler.png"
-                                text={product.title}
-                                label={product.price}
-                                path="/shop"
-                                key={product.id}
-                                />
-                            </ul>
-                            {/* copy and paste card component */}
-                            {/* <ul className="cards__items">
-                                <CardItem 
-                                src="images/Filler.png"
-                                text="Item 4 description text:"
-                                label="Bedroom Decor"
-                                path="/shop"
-                                />
-                                <CardItem 
-                                src="images/Filler.png"
-                                text="Item 5 description text:"
-                                label="Home Decor"
-                                path="/shop"
-                                />
-                                <CardItem 
-                                src="images/Filler.png"
-                                text="Item 6 description text:"
-                                label="Bathroom Decor"
-                                path="/shop"
-                                />
-                            </ul> */}
-                        </div>
-                    
-                    {/* </div> */}
-                    {/* <p> {product.price} </p>
-                    <p> {product.title} </p>
-                    <p> {product.description} </p> */}
-                </div>
-            </div>
+                <div key={product.id} className="card">
+                    <div><img src={product.image} alt="#"/></div>
+                    <div className="card-description"> {product.description} 
+                        <h6> {product.title} </h6>
+                        <h6> ${product.price} </h6>
+                        <h6> Descrption: {product.description} </h6>
+                    </div>
+                </div>   
             ))}
         </div>
     );
