@@ -1,6 +1,6 @@
 .product-cards-container {
   display: grid;
-  grid-template-columns: repeat(2, 40%);
+  grid-template-columns: repeat(2, 50%);
   grid-gap: 10px;
   align-items: center;
   justify-content: space-evenly;
