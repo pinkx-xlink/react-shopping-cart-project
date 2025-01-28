@@ -32,7 +32,8 @@ const Products = () => {
             )}
 
             {data.map((product)=> (
-                <div key={product.id} className="product-card">
+                <div className="card">
+                {/* <div key={product.id} className="product-card"> */}
                     <div className="cards__container">
                         <div className="cards__wrapper">
                             <ul className="cards__items">
@@ -41,6 +42,7 @@ const Products = () => {
                                 text={product.title}
                                 label={product.price}
                                 path="/shop"
+                                key={product.id}
                                 />
                             </ul>
                             {/* copy and paste card component */}
@@ -65,11 +67,13 @@ const Products = () => {
                                 />
                             </ul> */}
                         </div>
-                    </div>
+                    
+                    {/* </div> */}
                     {/* <p> {product.price} </p>
                     <p> {product.title} </p>
                     <p> {product.description} </p> */}
                 </div>
+            </div>
             ))}
         </div>
     );
