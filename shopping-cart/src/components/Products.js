@@ -2,8 +2,32 @@ import React, {useEffect, useState} from "react";
 import '../App.css';
 import 'axios' from axios;
 
-cost Products = () => {
+const Products = () => {
+    const [loading, setLoading] = useState[false];
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        setLoading(true);
+
+        axios({
+            method:"GET",
+            url:"https://fakestoreapi.com/products"
+        }).then(res=> {
+            console.log(res.data)
+            setData(res.data)
+        }).catch(e=>console.log(e))
+        .finally(()=>setLoading(false))
+    }, [])
     return (
-        <div className='products-container'>Products</div>
+        <div className='products-container'>
+            {loading && (
+                <div> 
+                    {" "}
+                    <h1> Loading... </h1> 
+                </div>
+            )}
+        </div>
     )
 }
+
+export default Products
