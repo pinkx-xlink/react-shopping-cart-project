@@ -26,8 +26,6 @@ const Cards = () => {
     
   return (
     <>
-
-    <h1>Check out our top picks for the season</h1>
     <div className='products-container'>
         {loading && (
             <div> 
@@ -37,7 +35,7 @@ const Cards = () => {
         )}
 
 <div className='product-cards-container'>
-{data.slice(0, 4).map((product)=> (
+{data.slice(0, 6).map((product)=> (
     
     <div key={product.id} className="cards">
         {/* <h2>{product.title}</h2> */}
@@ -47,7 +45,7 @@ const Cards = () => {
                 <CardItem 
                     src={product.image}
                     text={product.title}
-                    label="Beauty"
+                    label="New!"
                     path="/shop"
                     />
                 </ul>
