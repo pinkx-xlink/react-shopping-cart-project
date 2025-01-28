@@ -1,10 +1,28 @@
 import React, { useEffect, useState } from 'react'
 import '../../App.css';
 import Products from '../Products';
-
-export default function Shop() {
+import axios
+ from 'axios';
+const Shop = () => {
   const [cart, setCart] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+      setLoading(true);
+
+      axios({
+          method:"GET",
+          url:"https://fakestoreapi.com/products"
+      })
+      .then(res => {
+          console.log(res.data)
+          setData(res.data)
+      })
+      .catch((e) => console.log(e))
+      .finally(() => setLoading(false));
+  }, []);
 
   // Refactor this to use res.data products.id, title, and 
   // price instead of static array
@@ -72,3 +90,5 @@ export default function Shop() {
         </>
     )
 }
+
+export default Shop
