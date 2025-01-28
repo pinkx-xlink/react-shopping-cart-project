@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CardItem from './CardItem'
 import './Cards.css'
+import axios from 'axios';
+
 // import WaterfallImg from "src/images/waterfall-img.jpg";
 
 function Cards() {
+    const [loading, setLoading] = useState(false);
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        setLoading(true);
+
+        axios({
+            method:"GET",
+            url:"https://fakestoreapi.com/products"
+        })
+        .then(res => {
+            console.log(res.data)
+            setData(res.data)
+        })
+        .catch((e) => console.log(e))
+        .finally(() => setLoading(false));
+    }, []);
     
   return (
     <div className="cards">
