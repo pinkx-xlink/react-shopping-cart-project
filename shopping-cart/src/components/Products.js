@@ -36,9 +36,8 @@ const Products = () => {
             {data.map((product)=> (
                 //  <Link className="cards__item__link" to={props.path}></Link>
                 <div key={product.id} className="card">
-                    <Link to="/shop"><img src={product.image} alt="#"/></Link>
-                    <div className="card-description"> {product.description} 
-                        <h6> {product.title} </h6>
+                    <Link className="link__to__shop" to="/shop"><img src={product.image} alt="#"/></Link>
+                    <div className="card-description">{product.title}
                         <h6> ${product.price} </h6>
                         <h6> Descrption: {product.description} </h6>
                     </div>

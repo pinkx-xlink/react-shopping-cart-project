@@ -5,15 +5,36 @@
 
 }
 
-.card {
-  width: 350px;
+.card-container {
+  width: 80%;
   border: 1px solid black;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 5px;
+  background: #fff;
 }
+
+.card {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+
 
 img {
   width: 330px;
+}
+
+.card-description {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
