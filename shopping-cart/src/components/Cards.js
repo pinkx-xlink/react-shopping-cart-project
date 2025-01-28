@@ -5,7 +5,7 @@ import axios from 'axios';
 
 // import WaterfallImg from "src/images/waterfall-img.jpg";
 
-function Cards() {
+const Cards = () => {
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState([]);
 
@@ -25,26 +25,36 @@ function Cards() {
     }, []);
     
   return (
-    <div className="cards">
+
+    <div className='products-container'>
+        {loading && (
+            <div> 
+                {" "}
+                <h1> Loading... </h1> 
+            </div>
+        )}
+
+{data.map((product)=> (
+    <div key={product.id} className="cards">
         <h1>Check out our top picks for the season</h1>
         <div className="cards__container">
             <div className="cards__wrapper">
                 <ul className="cards__items">
                 <CardItem 
-                    src="images/Filler.png"
-                    text="Item 1 description text:"
+                    src={product.image}
+                    text={product.title}
                     label="Beauty"
                     path="/shop"
                     />
                     <CardItem 
-                    src="images/Filler.png"
-                    text="Item 2 description text:"
+                    src={product.image}
+                    text={product.title}
                     label="Womens Fashion"
                     path="/shop"
                     />
                      <CardItem 
-                    src="images/Filler.png"
-                    text="Item 3 description text:"
+                    src={product.image}
+                    text={product.title}
                     label="Men's Fashion"
                     path="/shop"
                     />
@@ -73,6 +83,9 @@ function Cards() {
             </div>
         </div>
     </div>
+    ))}
+    </div>
+
   )
 }
 
