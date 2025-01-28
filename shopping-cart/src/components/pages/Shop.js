@@ -6,6 +6,9 @@ export default function Shop() {
   const [cart, setCart] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
 
+  // Refactor this to use res.data products.id, title, and 
+  // price instead of static array
+
   const items = [
     {
       id: 1,
