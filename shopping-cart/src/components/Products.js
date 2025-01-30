@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 import NumberAdjuster from "./ProductQtyAdjuster";
 
 const Products = () => {
-  
-  
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
 
