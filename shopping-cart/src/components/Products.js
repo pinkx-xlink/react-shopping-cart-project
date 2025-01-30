@@ -8,8 +8,12 @@ const Products = () => {
   const [cart, setCart] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
   
+  // for shopping 
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
+
+  // for # adjuster
+  const [number, setNumber] = useState(0);
 
   useEffect(() => {
     setLoading(true);
@@ -26,6 +30,7 @@ const Products = () => {
     .finally(() => setLoading(false));
   }, []);
     
+  // cart logic
   const items = data
 
   const listItems = items.map((product) => (
@@ -64,6 +69,22 @@ const Products = () => {
     </div>
   ));
 
+  // number adjuster logic 
+  const handleInputChange = (e) => {
+    const value = parseInt(e.target.value, 10);
+    if (!isNaN(value)) {
+      setNumber(value);
+    }
+  };
+
+  const increaseNumber = () => {
+    setNumber(number + 1);
+  };
+
+  const decreaseNumber = () => {
+    setNumber(number - 1);
+  };
+
   return (
     <>
       <h6>{cartItems}</h6>
@@ -84,6 +105,12 @@ const Products = () => {
                 <h2> ${product.price} </h2>
                 <h6> Descrption: {product.description} </h6>
                 <input input type="submit" value="add" onClick={() => addToCart(product)} />
+                <button onClick={increaseNumber} style={{ marginRight: '5px' }}>
+        Increase
+      </button>
+      <button onClick={decreaseNumber}>
+        Decrease
+      </button>
               </div>
             </div>   
           ))}
