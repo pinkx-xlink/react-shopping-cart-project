@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, {Component, useEffect, useState} from "react";
 import '../App.css';
 import axios from "axios";
 import './Products.css';
 import { Link } from "react-router-dom";
+import RenderProducts from "./RenderProducts";
 
 const Products = () => {
   const [cart, setCart] = useState([]);
@@ -45,7 +46,7 @@ const Products = () => {
   const decreaseNumber = () => {
     setNumber(number - 1);
   };
-  
+
   // cart logic
   const items = data
 

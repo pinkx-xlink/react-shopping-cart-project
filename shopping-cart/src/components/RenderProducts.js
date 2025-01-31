@@ -12,3 +12,4 @@ class RenderProducts extends Component {
    }
 }
 
+export default RenderProducts;
