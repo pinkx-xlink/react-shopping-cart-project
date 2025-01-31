@@ -3,7 +3,6 @@ import '../App.css';
 import axios from "axios";
 import './Products.css';
 import { Link } from "react-router-dom";
-import RenderProducts from "./RenderProducts";
 
 const Products = () => {
   const [cart, setCart] = useState([]);
