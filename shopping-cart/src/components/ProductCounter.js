@@ -39,3 +39,5 @@ const ProductCounter = () => {
         </div>
     )
 }
+
+export default ProductCounter

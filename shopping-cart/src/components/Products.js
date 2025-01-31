@@ -3,6 +3,7 @@ import '../App.css';
 import axios from "axios";
 import './Products.css';
 import { Link } from "react-router-dom";
+import ProductCounter from "./ProductCounter";
 
 const Products = () => {
   const [cart, setCart] = useState([]);
@@ -91,7 +92,7 @@ const Products = () => {
                 <h2>{product.title}</h2>
                 <h2> ${product.price} </h2>
                 <h6> Descrption: {product.description} </h6>
-                
+                < ProductCounter />
                 <input input type="submit" value="add" onClick={() => addToCart(product)} />
               </div>
             </div>   
