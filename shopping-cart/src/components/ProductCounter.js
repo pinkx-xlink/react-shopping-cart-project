@@ -36,6 +36,7 @@ const ProductCounter = () => {
             <button onClick={decreaseNumber}>
             Decrease
             </button>
+            <div>{number}</div>
         </div>
     )
 }
