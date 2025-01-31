@@ -28,3 +28,10 @@ Cart.js
 -  switch from homepage to shop page
 -  show shopping cart
 -  close shopping cart
+
+To-do:
+- Connect each number adjuster to the item above it
+  1. Make a variable to hold the # currently in the 
+  input field
+  2. Assign the # to the appropriate product
+  2. Get that ^ # when we hit the "add to cart" btn, and add that qty of the item to the cart
