@@ -30,6 +30,22 @@ const Products = () => {
     .finally(() => setLoading(false));
   }, []);
     
+  // number adjuster logic 
+  const handleInputChange = (e) => {
+    const value = parseInt(e.target.value, 10);
+    if (!isNaN(value)) {
+      setNumber(value);
+    }
+  };
+
+  const increaseNumber = () => {
+    setNumber(number + 1);
+  };
+
+  const decreaseNumber = () => {
+    setNumber(number - 1);
+  };
+  
   // cart logic
   const items = data
 
@@ -69,21 +85,7 @@ const Products = () => {
     </div>
   ));
 
-  // number adjuster logic 
-  const handleInputChange = (e) => {
-    const value = parseInt(e.target.value, 10);
-    if (!isNaN(value)) {
-      setNumber(value);
-    }
-  };
-
-  const increaseNumber = () => {
-    setNumber(number + 1);
-  };
-
-  const decreaseNumber = () => {
-    setNumber(number - 1);
-  };
+  
 
   return (
     <>
@@ -104,13 +106,23 @@ const Products = () => {
                 <h2>{product.title}</h2>
                 <h2> ${product.price} </h2>
                 <h6> Descrption: {product.description} </h6>
+                <div>
+                  <input
+                    type="number"
+                    value={number}
+                    onChange={handleInputChange}
+                    style={{ marginRight: '10px' }}
+                  />
+                  <button 
+                  onClick={increaseNumber} 
+                  style={{ marginRight: '5px' }}>
+                    Increase
+                  </button>
+                  <button onClick={decreaseNumber}>
+                    Decrease
+                  </button>
+                </div>
                 <input input type="submit" value="add" onClick={() => addToCart(product)} />
-                <button onClick={increaseNumber} style={{ marginRight: '5px' }}>
-        Increase
-      </button>
-      <button onClick={decreaseNumber}>
-        Decrease
-      </button>
               </div>
             </div>   
           ))}
