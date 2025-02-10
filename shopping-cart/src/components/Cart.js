@@ -1,21 +1,11 @@
 import React, { useState, useEffect } from 'react'
 const Cart = ({ cart, setCart, handleChange }) => {
-    const [price, setPrice] = useState(0);
-
     const handleRemove = (id) => {
-        const arr = cart.filter((item) => item.id !== id);
-        setCart(arr);
-        handlePrice();
-    };
-    const handlePrice = () => {
-        let ans = 0;
-        cart.map((item) => (ans += item.amount * item.price));
-        setPrice(ans);
+        setCart(cart => cart.filter(item => item.id !== id))
     };
 
-    useEffect(() => {
-        handlePrice();
-    });
+    const price = cart.reduce((total, item) => total + item.amount * item.price, 0);
+
 
     console.log(setCart);
 
@@ -24,9 +14,9 @@ const Cart = ({ cart, setCart, handleChange }) => {
             {cart.map((item) => (
                 <div className="cart_box" key="item.id">
                     <div>
-                        <button onClick={() => handleChange(item, 1)}>+</button>
+                        <button onClick={() => handleChange(item.id, 1)}>+</button>
                         <button>{item.amount}</button>
-                        <button onClick={() => handleChange(item, -1)}>-</button>
+                        <button onClick={() => handleChange(item.id, -1)}>-</button>
                     </div>
                     <div>
                         <span>{item.price}</span>
