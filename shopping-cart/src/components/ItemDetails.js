@@ -1,10 +1,9 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-function ItemDetail(handleClick) {
-    const params = useParams();
-    let { productCode, vendor, value} = params;
-    let item = {productCode, vendor, value};
+function ItemDetail({ handleClick }) {
+    const { id, description, price } = useParams();
+    let item = {id, description, price};
 
     console.log(item);
 
