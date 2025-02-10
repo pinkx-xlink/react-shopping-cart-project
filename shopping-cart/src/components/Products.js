@@ -93,7 +93,8 @@ const Products = () => {
                 <h2> ${product.price} </h2>
                 <h6> Descrption: {product.description} </h6>
                 < ProductCounter />
-                <input input type="submit" value="add" onClick={() => addToCart(product)} />
+               
+                <input type="submit" value="add" onClick={() => addToCart(product)} />
               </div>
             </div>   
           ))}
