@@ -18,3 +18,5 @@ function ItemDetail({ handleClick }) {
         </>
     );
 }
+
+export default ItemDetail;
