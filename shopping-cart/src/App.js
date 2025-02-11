@@ -23,6 +23,7 @@ function App() {
   const handleClick = (item) => {
     console.log(`${itemAmount}`)
     setItemAmount(itemAmount + 1)
+    // ISSUE: adds another thisAmount div to the page every time the Add to Cart btn is clicked - gross!
     thisAmount.innerHTML = `Added ${itemAmount} of this item to cart`;
     console.log(thisAmount);
     
