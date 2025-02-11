@@ -2,7 +2,8 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import './ItemDetails.css'
-function ItemDetail({ handleClick }) {
+import CardItem from './CardItem';
+function ItemDetail({ handleClick,  }) {
     const { id, price, title } = useParams();
     let item = {id, price, title};
 
@@ -17,6 +18,7 @@ function ItemDetail({ handleClick }) {
                     <p>price: {price}</p>
                     <p>item: {title}</p>
                 </div>
+                <p>Amount: {item.setItemAmount}</p>
                 <button onClick={() => handleClick(item)}> Add to Cart </button>
                 <div className='nav_btns'>
                     <Link to="/shop"> X </Link>

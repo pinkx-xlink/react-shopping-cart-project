@@ -12,12 +12,20 @@ import Products from './components/Products';
 import ItemDetail from './components/ItemDetails';
 
 function App() {
+  const thisAmount = document.createElement('div');
  
+  document.body.appendChild(thisAmount)
+
   const [show, setShow] = useState(true);
-  const [myItems, setMyItems] = useState([]);
+  const [itemAmount, setItemAmount] = useState(0);
   const [cart, setCart] = useState([]);
 
   const handleClick = (item) => {
+    console.log(`${itemAmount}`)
+    setItemAmount(itemAmount + 1)
+    thisAmount.innerHTML = `Added ${itemAmount} of this item to cart`;
+    console.log(thisAmount);
+    
     // Update cart item quantity if already in cart
     if (cart.some((cartItem) => cartItem.id === item.id)) {
       setCart((cart) =>
@@ -30,6 +38,7 @@ function App() {
             : cartItem
         )
       );
+      
       return;
     }
 
@@ -38,7 +47,10 @@ function App() {
       ...cart,
       { ...item, amount: 1 } // <-- initial amount 1
     ]);
+    
   };
+
+  
 
   const handleChange = (id, d) => {
     setCart((cart) =>
@@ -56,6 +68,7 @@ function App() {
       )
     );
   };
+
 
   return (
       <Router>
@@ -77,7 +90,7 @@ function App() {
             <Cart
               cart={cart}
               setCart={setCart}
-              myItems={setMyItems}
+              setItemAmount={setItemAmount}
               handleChange={handleChange}
             />
           )}
