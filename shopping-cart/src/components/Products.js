@@ -46,7 +46,7 @@ const Products = () => {
                 <h2>{product.title}</h2>
                 <h2> ${product.price} </h2>
                 <h6> Descrption: {product.description} </h6>
-                < ProductCounter />
+                {/* < ProductCounter /> */}
                
                 <input type="submit" value="add"/>
               </div>
