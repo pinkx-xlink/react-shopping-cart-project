@@ -1,7 +1,7 @@
 import {React, useState, useEffect} from 'react'
 import Products from '../Products';
 import ItemDetail from '../ItemDetails';
-import Cart from '../Cart';
+import Cart from './Cart';
 
 const MyCart = () => {
 
@@ -23,6 +23,7 @@ const MyCart = () => {
             />
           )}
         /> */}
+     <Cart />
         </>
     )
 }
