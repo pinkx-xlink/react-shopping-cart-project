@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+
 const Cart = ({ cart, setCart, handleChange }) => {
     const handleRemove = (id) => {
         setCart(cart => cart.filter(item => item.id !== id))
@@ -11,7 +12,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
     return(
         <article>
-             <h1>HELLOOOOO, let's checkout</h1>
+             {/* <h1>HELLOOOOO, let's checkout</h1> */}
             {cart.map((item) => (
                 <div className="cart_box" key="item.id">
                     <div>
