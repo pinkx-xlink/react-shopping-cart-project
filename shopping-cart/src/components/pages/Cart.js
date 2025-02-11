@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-
+import './Cart.css'
 const Cart = ({ cart, setCart, handleChange }) => {
     const handleRemove = (id) => {
         setCart(cart => cart.filter(item => item.id !== id))

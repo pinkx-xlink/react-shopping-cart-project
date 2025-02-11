@@ -1,0 +1,10 @@
+.cart_box {
+  display: flex;
+  border: 2px solid pink;
+  border-radius: 15px;
+  height: 35px;
+  width: 80%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
