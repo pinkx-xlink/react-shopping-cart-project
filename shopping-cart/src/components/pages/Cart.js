@@ -13,10 +13,14 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
     return(
         <article>
-             {/* <h1>HELLOOOOO, let's checkout</h1> */}
+             <h1>HELLOOOOO, let's checkout</h1>
             {cart.map((item) => (
-                <div className="cart_box" key="item.id">
+
+                <div className="cart_box" key={item.id}>
                     <div>
+                        <p>qty: {item.amount}</p>
+                        <p>item: {item.description}</p>
+                        <p>item price: {item.price}</p>
                         <button onClick={() => handleChange(item.id, 1)}>+</button>
                         <button>{item.amount}</button>
                         <button onClick={() => handleChange(item.id, -1)}>-</button>
