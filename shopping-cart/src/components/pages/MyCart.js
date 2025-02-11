@@ -8,6 +8,21 @@ const MyCart = () => {
     return (
         <>
             <h1>HELLOOOOO, let's checkout</h1>
+                 {/* Add to Cart logic */}
+        {/* <Route
+          path="/itemDetail/:id/:price/:description"
+          element={<ItemDetail handleClick={handleClick} />}
+        />
+        <Route
+          path="/Cart/"
+          element={(
+            <Cart
+              cart={cart}
+              setCart={setCart}
+              handleChange={handleChange}
+            />
+          )}
+        /> */}
         </>
     )
 }
