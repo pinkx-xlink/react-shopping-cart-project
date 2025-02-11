@@ -36,13 +36,13 @@ const Cart = ({ cart, setCart, handleChange }) => {
             {cart.map((item) => (
 
                 <div className="cart_box" key={item.id}>
-                    <div>
+                    <div className='item_amount_el'>
 
                         <button onClick={() => handleChange(item.id, 1)}>+</button>
                         <button>{item.amount}</button>
                         <button onClick={() => handleChange(item.id, -1)}>-</button>
                     </div>
-                    <div>
+                    <div className='item_info'>
                         <span>{item.title}{item.price}</span>
                         <button onClick={() => handleRemove(item.id)}>Remove</button>
                     </div>
