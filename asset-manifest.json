@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pinkx-xlink/react-shopping-cart-project/static/css/main.1e657519.css",
+    "main.js": "/pinkx-xlink/react-shopping-cart-project/static/js/main.90974298.js",
+    "static/js/99.3173d403.chunk.js": "/pinkx-xlink/react-shopping-cart-project/static/js/99.3173d403.chunk.js",
+    "index.html": "/pinkx-xlink/react-shopping-cart-project/index.html",
+    "main.1e657519.css.map": "/pinkx-xlink/react-shopping-cart-project/static/css/main.1e657519.css.map",
+    "main.90974298.js.map": "/pinkx-xlink/react-shopping-cart-project/static/js/main.90974298.js.map",
+    "99.3173d403.chunk.js.map": "/pinkx-xlink/react-shopping-cart-project/static/js/99.3173d403.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e657519.css",
+    "static/js/main.90974298.js"
+  ]
+}
