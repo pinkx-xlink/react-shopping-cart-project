@@ -8,9 +8,6 @@ import MyCart from './components/pages/MyCart';
 // import Products from './components/pages/Products';
 // import Services from './components/pages/Services';
 // import SignUp from './components/pages/SignUp';
-import Products from '../src/components/Products';
-import ItemDetail from '../src/components/ItemDetails';
-import Cart from '../src/components/Cart';
 
 
 function App() {
