@@ -4,6 +4,7 @@ import Products from '../Products';
 import ItemDetail from '../ItemDetails';
 import Cart from '../Cart';
 import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
   const [show, setShow] = useState(true);
@@ -51,7 +52,7 @@ return;
 
   return (
     <>
-    
+    <Link to="/cart">Checkout</Link>
       <h1 className='shop'>SHOP</h1>
       < Products />
      {/* Add to Cart logic */}
@@ -69,6 +70,8 @@ return;
             />
           )}
         /> */}
+        
+
     </>
   )
 }

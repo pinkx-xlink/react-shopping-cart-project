@@ -24,6 +24,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                     </div>
                 </div>
             ))}
+            <p>CART</p>
             <div className='total'>
                 <span>Total Cart Price</span>
                 <span>R - {price}</span>

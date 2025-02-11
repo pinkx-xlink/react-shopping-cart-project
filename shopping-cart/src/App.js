@@ -21,6 +21,7 @@ function App() {
         <Switch>
           <Route path='/' exact element={< Home />}></Route>
           <Route path='/shop' exact element={< Shop />}></Route>
+          
           {/* <Route path='/products' exact element={< Products />}></Route>
           <Route path='/sign-up' exact element={< SignUp />}></Route> */}
         {/* Add to Cart logic */}
