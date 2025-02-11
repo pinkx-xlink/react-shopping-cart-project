@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 const Cart = ({ cart, setCart, handleChange }) => {
     const handleRemove = (id) => {
@@ -31,6 +32,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                 <span>Total Cart Price</span>
                 <span>R - {price}</span>
             </div>
+            <Link to="/shop">exit</Link>
         </article>
     );
 };
