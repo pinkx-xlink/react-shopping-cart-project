@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../../App.css';
 import Products from '../Products';
 import ItemDetail from '../ItemDetails';
-import Cart from '../Cart';
+import Cart from './Cart';
 import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -52,7 +52,7 @@ return;
 
   return (
     <>
-    <Link to="/cart">Checkout</Link>
+      <Link to="/cart">Checkout</Link>
       <h1 className='shop'>SHOP</h1>
       < Products />
 

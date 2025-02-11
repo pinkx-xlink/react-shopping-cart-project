@@ -11,6 +11,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
     return(
         <article>
+             <h1>HELLOOOOO, let's checkout</h1>
             {cart.map((item) => (
                 <div className="cart_box" key="item.id">
                     <div>
