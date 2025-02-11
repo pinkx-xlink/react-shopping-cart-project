@@ -35,6 +35,11 @@ const Cart = ({ cart, setCart, handleChange }) => {
                 </div>
             ))}
             <p>CART</p>
+            <ul>
+                {cart.map(item => (
+                    <li key={item.id}>{item.id}</li>
+                ))}
+            </ul>
             <div className='total'>
                 <span>Total Cart Price</span>
                 <span>R - {price}</span>
