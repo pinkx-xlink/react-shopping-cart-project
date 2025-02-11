@@ -13,7 +13,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
     // only shows the total price and qty of total items.
     // Remove btn removes ALL ITEMS at once
     // only shows info for the first item, not all items in cart
-
+    // only the "add" btn on the first two items work??
     console.log(setCart);
 
     return(
@@ -23,9 +23,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
                 <div className="cart_box" key={item.id}>
                     <div>
-                        <p>qty: {item.amount}</p>
-                        <p>item: {item.description}</p>
-                        <p>item price: {item.price}</p>
+
                         <button onClick={() => handleChange(item.id, 1)}>+</button>
                         <button>{item.amount}</button>
                         <button onClick={() => handleChange(item.id, -1)}>-</button>

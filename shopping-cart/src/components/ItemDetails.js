@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
 function ItemDetail({ handleClick }) {
-    const { id, description, price } = useParams();
-    let item = {id, description, price};
+    const { id, price, description } = useParams();
+    let item = {id, price, description};
 
     console.log(item);
 
