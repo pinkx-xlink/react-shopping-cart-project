@@ -12,10 +12,7 @@ import Products from './components/Products';
 import ItemDetail from './components/ItemDetails';
 
 function App() {
-  const thisAmount = document.createElement('div');
  
-  document.body.appendChild(thisAmount)
-
   const [show, setShow] = useState(true);
   const [itemAmount, setItemAmount] = useState(0);
   const [cart, setCart] = useState([]);
@@ -23,9 +20,7 @@ function App() {
   const handleClick = (item) => {
     console.log(`${itemAmount}`)
     setItemAmount(itemAmount + 1)
-    // ISSUE: adds another thisAmount div to the page every time the Add to Cart btn is clicked - gross!
-    thisAmount.innerHTML = `Added ${itemAmount} of this item to cart`;
-    console.log(thisAmount);
+    const thisAmount = document.createElement('div');
     
     // Update cart item quantity if already in cart
     if (cart.some((cartItem) => cartItem.id === item.id)) {
@@ -39,7 +34,6 @@ function App() {
             : cartItem
         )
       );
-      
       return;
     }
 
