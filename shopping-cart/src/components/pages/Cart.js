@@ -8,6 +8,11 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
     const price = cart.reduce((total, item) => total + item.amount * item.price, 0);
 
+    // BUGS:
+    // does not show each individual item in cart, 
+    // only shows the total price and qty of total items.
+    // Remove btn removes ALL ITEMS at once
+    // only shows info for the first item, not all items in cart
 
     console.log(setCart);
 
