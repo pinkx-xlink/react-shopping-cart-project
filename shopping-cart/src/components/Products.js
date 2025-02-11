@@ -41,8 +41,9 @@ const Products = () => {
 
           {data.map((product)=> (
             <div key={product.id} className="card">
-              <Link className="link__to__shop" to={`/itemDetail/${product.id}/${product.price}/${product.description}`}><img src={product.image} alt="#"/></Link>
-              <div className="card-description">
+              <Link className="link__to__shop" to={`/itemDetail/${product.id}/${product.price}/${product.description}`}>
+                <img src={product.image} alt="#"/>
+                <div className="card-description">
                 <h2>{product.title}</h2>
                 <h2> ${product.price} </h2>
                 <h6> Descrption: {product.description} </h6>
@@ -50,6 +51,8 @@ const Products = () => {
                
                 <input type="submit" value="add"/>
               </div>
+              </Link>
+             
             </div>   
           ))}
         </div>
