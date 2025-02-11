@@ -6,9 +6,7 @@ import { Link } from "react-router-dom";
 import ProductCounter from "./ProductCounter";
 
 const Products = () => {
-  const [cart, setCart] = useState([]);
-  const [cartTotal, setCartTotal] = useState(0);
-  
+
   // for shopping 
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -30,53 +28,9 @@ const Products = () => {
     .finally(() => setLoading(false));
   }, []);
     
- 
-
-  // cart logic
-  const items = data
-
-  const listItems = items.map((product) => (
-    <div key={product.id}>
-      {`${product.title}: $${product.price}`}
-      <input type="submit" value="add" onClick={() => addToCart(product)} />
-    </div>
-  ))
-
-  useEffect(() => {
-    total();
-  }, [cart]);
-
-  const total = () => {
-    let totalVal = 0;
-    for (let i = 0; i < cart.length; i++) {
-      totalVal += cart[i].price;
-    }
-    setCartTotal(totalVal);
-  };
-
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-  };
-
-  const removeFromCart = (product) => {
-    let hardCopy = [...cart];
-    hardCopy = hardCopy.filter((cartItem) => cartItem.id !== product.id);
-    setCart(hardCopy);
-  };
-
-  const cartItems = cart.map((product) => (
-    <div key={product.id}>
-      {`${product.title}: $${product.price}`}
-      <input type="submit" value="remove" onClick={() => removeFromCart(product)} />
-    </div>
-  ));
-
-  
 
   return (
     <>
-      <h6>{cartItems}</h6>
-      <h5>Total: ${cartTotal}</h5>
       <div className='products-container'>
           {loading && (
             <div> 
@@ -94,7 +48,7 @@ const Products = () => {
                 <h6> Descrption: {product.description} </h6>
                 < ProductCounter />
                
-                <input type="submit" value="add" onClick={() => addToCart(product)} />
+                <input type="submit" value="add"/>
               </div>
             </div>   
           ))}
