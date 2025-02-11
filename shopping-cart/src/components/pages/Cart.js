@@ -7,7 +7,21 @@ const Cart = ({ cart, setCart, handleChange }) => {
     };
 
     const price = cart.reduce((total, item) => total + item.amount * item.price, 0);
+    
+    const results = [];
+    // const showCartItems = ({ cart, setMyItems, handleChange }) => {
+    //     setMyItems(cart, id => {
+    //     results.push(
+    //         <div key={id}>
+    //             <h2>name: {item.title}</h2>
+    //             <h2>price: {item.price}</h2>
 
+    //             <hr />
+    //         </div>,
+    //     );
+    // });
+    // }
+    
     // BUGS:
     // does not show each individual item in cart, 
     // only shows the total price and qty of total items.
@@ -29,17 +43,14 @@ const Cart = ({ cart, setCart, handleChange }) => {
                         <button onClick={() => handleChange(item.id, -1)}>-</button>
                     </div>
                     <div>
-                        <span>{item.price}</span>
+                        <span>{item.title}{item.price}</span>
                         <button onClick={() => handleRemove(item.id)}>Remove</button>
                     </div>
                 </div>
             ))}
             <p>CART</p>
-            <ul>
-                {cart.map(item => (
-                    <li key={item.id}>{item.id}</li>
-                ))}
-            </ul>
+            <div>{results}</div>
+            <ul>  </ul>
             <div className='total'>
                 <span>Total Cart Price</span>
                 <span>R - {price}</span>

@@ -14,6 +14,7 @@ import ItemDetail from './components/ItemDetails';
 function App() {
  
   const [show, setShow] = useState(true);
+  const [myItems, setMyItems] = useState([]);
   const [cart, setCart] = useState([]);
 
   const handleClick = (item) => {
@@ -67,7 +68,7 @@ function App() {
           <Route path='/sign-up' exact element={< SignUp />}></Route> */}
         {/* Add to Cart logic */}
          <Route
-          path="/itemDetail/:id/:price/:description"
+          path="/itemDetail/:id/:price/:title"
           element={<ItemDetail handleClick={handleClick} />}
         />
         <Route
@@ -76,6 +77,7 @@ function App() {
             <Cart
               cart={cart}
               setCart={setCart}
+              myItems={setMyItems}
               handleChange={handleChange}
             />
           )}
