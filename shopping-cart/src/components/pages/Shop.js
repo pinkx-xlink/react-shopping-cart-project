@@ -54,7 +54,21 @@ return;
     
       <h1 className='shop'>SHOP</h1>
       < Products />
-    
+     {/* Add to Cart logic */}
+        {/* <Route
+          path="/itemDetail/:id/:price/:description"
+          element={<ItemDetail handleClick={handleClick} />}
+        />
+        <Route
+          path="/Cart/"
+          element={(
+            <Cart
+              cart={cart}
+              setCart={setCart}
+              handleChange={handleChange}
+            />
+          )}
+        /> */}
     </>
   )
 }
