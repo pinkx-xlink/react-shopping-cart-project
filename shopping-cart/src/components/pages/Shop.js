@@ -3,6 +3,7 @@ import '../../App.css';
 import Products from '../Products';
 import ItemDetail from '../ItemDetails';
 import Cart from '../Cart';
+import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
 
 const Shop = () => {
   const [show, setShow] = useState(true);
@@ -20,12 +21,55 @@ const Shop = () => {
     : cartItem
   )
 );
+return;
     }
-  }
+    // Add to cart
+    setCart((cart) => [
+      ...cart,
+      { ...item, amount: 1 }
+    ]);
+  };
+
+  const handleChange = (id, d) => {
+    setCart((cart) =>
+      cart.flatMap((cartItem) => 
+        cartItem.id === id
+    ? cartItem.id + d < 1
+    ? [] // remove item if amount will be less than 1
+    : [
+      {
+        ...cartItem,
+        amount: cartItem.amount + d
+      }
+    ]
+  : [cartItem]
+)
+);
+  };
   return (
     <>
+      <Router>
+        <Routes>
+        <Route
+          path="/itemDetail/:id/:price/:description"
+          element={<ItemDetail handleClick={handleClick} />}
+        />
+        <Route
+          path="/Cart/"
+          element={(
+            <Cart
+              cart={cart}
+              setCart={setCart}
+              handleChange={handleChange}
+            />
+          )}
+        />
+ 
+        </Routes>
+      </Router>
       <h1 className='shop'>SHOP</h1>
       < Products />
+    
     </>
   )
 }
