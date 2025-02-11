@@ -1,7 +1,7 @@
 import { React, useState} from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes as Switch, BrowserRouter } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Shop from './components/pages/Shop';
 // import Products from './components/pages/Products';
@@ -55,7 +55,6 @@ return;
   };
 
   return (
-    <>
       <Router>
         <Navbar />
         <Switch>
@@ -80,7 +79,6 @@ return;
 
         </Switch>
       </Router>
-    </>
   );
 }
 
