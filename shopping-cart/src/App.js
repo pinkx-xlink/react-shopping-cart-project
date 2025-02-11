@@ -15,6 +15,7 @@ import Cart from '../src/components/Cart';
 function App() {
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
+
   const handleClick = (item) => {
     // Update cart item qty if already in the cart
     if (cart.some((cartItem) => cartItem.id === item.id)) {
@@ -41,18 +42,18 @@ return;
     setCart((cart) =>
       cart.flatMap((cartItem) => 
         cartItem.id === id
-    ? cartItem.id + d < 1
-    ? [] // remove item if amount will be less than 1
-    : [
-      {
-        ...cartItem,
-        amount: cartItem.amount + d
-      }
-    ]
-  : [cartItem]
-)
-);
-  };
+          ? cartItem.amount + d < 1
+          ? [] // remove item if amount will be less than 1
+          : [
+              {
+                ...cartItem,
+                amount: cartItem.amount + d
+              }
+            ]
+          : [cartItem]
+        )
+      );
+    };
 
   return (
       <Router>
@@ -62,7 +63,8 @@ return;
           <Route path='/shop' exact element={< Shop />}></Route>
           {/* <Route path='/products' exact element={< Products />}></Route>
           <Route path='/sign-up' exact element={< SignUp />}></Route> */}
-        <Route
+        {/* Add to Cart logic */}
+        {/* <Route
           path="/itemDetail/:id/:price/:description"
           element={<ItemDetail handleClick={handleClick} />}
         />
@@ -75,7 +77,7 @@ return;
               handleChange={handleChange}
             />
           )}
-        />
+        /> */}
 
         </Switch>
       </Router>
