@@ -4,7 +4,7 @@ import axios from "axios";
 import './Products.css';
 import { Link } from "react-router-dom";
 import ProductCounter from "./ProductCounter";
-
+import ItemDetail from "./ItemDetails";
 const Products = () => {
 
   // for shopping 
@@ -41,7 +41,7 @@ const Products = () => {
 
           {data.map((product)=> (
             <div key={product.id} className="card">
-              <Link className="link__to__shop" to="/shop"><img src={product.image} alt="#"/></Link>
+              <Link className="link__to__shop" to={`/itemDetail/${product.id}/${product.price}/${product.description}`}><img src={product.image} alt="#"/></Link>
               <div className="card-description">
                 <h2>{product.title}</h2>
                 <h2> ${product.price} </h2>
