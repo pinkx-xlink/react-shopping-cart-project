@@ -18,10 +18,10 @@ function App() {
 
   const handleClick = (item) => {
     // Update cart item quantity if already in cart
-    if (cart.some((cartItem) => cartItem.productCode === item.productCode)) {
+    if (cart.some((cartItem) => cartItem.id === item.id)) {
       setCart((cart) =>
         cart.map((cartItem) =>
-          cartItem.productCode === item.productCode
+          cartItem.id === item.id
             ? {
                 ...cartItem,
                 amount: cartItem.amount + 1
@@ -39,10 +39,10 @@ function App() {
     ]);
   };
 
-  const handleChange = (productCode, d) => {
+  const handleChange = (id, d) => {
     setCart((cart) =>
       cart.flatMap((cartItem) =>
-        cartItem.productCode === productCode
+        cartItem.id === id
           ? cartItem.amount + d < 1
             ? [] // <-- remove item if amount will be less than 1
             : [
