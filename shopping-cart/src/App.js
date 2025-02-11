@@ -20,8 +20,7 @@ function App() {
   const handleClick = (item) => {
     console.log(`${itemAmount}`)
     setItemAmount(itemAmount + 1)
-    const thisAmount = document.createElement('div');
-    
+
     // Update cart item quantity if already in cart
     if (cart.some((cartItem) => cartItem.id === item.id)) {
       setCart((cart) =>
