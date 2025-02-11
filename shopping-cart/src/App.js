@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState} from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-dom';
@@ -7,9 +7,9 @@ import Shop from './components/pages/Shop';
 // import Products from './components/pages/Products';
 // import Services from './components/pages/Services';
 // import SignUp from './components/pages/SignUp';
-import Products from '../Products';
-import ItemDetail from '../ItemDetails';
-import Cart from '../Cart';
+import Products from '../src/components/Products';
+import ItemDetail from '../src/components/ItemDetails';
+import Cart from '../src/components/Cart';
 
 
 function App() {
