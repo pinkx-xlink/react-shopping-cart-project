@@ -64,6 +64,10 @@
     transition: all 0.2s ease-out;
   }
   
+  .nav-links:focus {
+    border-bottom: 4px solid #fff;
+  }
+
   .fa-bars {
     color: #fff;
   }
