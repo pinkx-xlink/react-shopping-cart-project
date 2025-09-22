@@ -46,13 +46,12 @@ const Products = () => {
                 <div className="product-info">
                   <img src={product.image} alt="#"/>
                   <div className="card-description">
-                    <h2> ${product.price} </h2>
                     <h6> Description: {product.description} </h6>
                     {/* < ProductCounter /> */}
                   </div>
                 </div>
+                <h3><u>${product.price}</u></h3>
                 <input type="submit" value="add" className="add-to-cart-button"/>
-              
               </Link>
              
             </div>   
