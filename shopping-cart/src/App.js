@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes as Switch, BrowserRouter } from 
 import Home from './components/pages/Home';
 import Shop from './components/pages/Shop';
 import Cart from './components/pages/Cart';
+import Signup from './components/pages/Signup';
 // import Products from './components/pages/Products';
 // import Services from './components/pages/Services';
 // import SignUp from './components/pages/SignUp';
@@ -71,6 +72,7 @@ function App() {
           <Route path='/' exact element={< Home />}></Route>
           <Route path='/shop' exact element={< Shop />}></Route>
           <Route path='/cart' exact element={< Cart />}></Route>
+          <Route path='/signup' exact element={< Signup />}></Route>
           {/* <Route path='/products' exact element={< Products />}></Route>
           <Route path='/sign-up' exact element={< SignUp />}></Route> */}
         {/* Add to Cart logic */}
