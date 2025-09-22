@@ -68,6 +68,7 @@ function Navbar() {
                         alt="Cart" 
                         height={"50px"}
                         width={"50px"}
+                        className='cart-icon'
                         />
                         </Link>
                     </li>

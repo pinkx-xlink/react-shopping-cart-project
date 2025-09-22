@@ -46,7 +46,7 @@
   }
   
   .nav-item {
-    
+    width: 100px;
     height: 80px;
   }
   /* color WAS set to white and made elements disappear */
