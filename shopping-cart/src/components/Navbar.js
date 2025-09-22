@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { Button } from './Button';
+import cartImg from '../images/cart.svg';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -60,7 +61,13 @@ function Navbar() {
                         className='nav-links' 
                         onClick={closeMobileMenu}
                         >
-                        Cart
+                        
+                            <img 
+                            src={cartImg} 
+                            alt='shopping cart'
+                            height={70}
+                            />
+                       
                         </Link>
                     </li>
                     {/*<li className='nav-item'>
