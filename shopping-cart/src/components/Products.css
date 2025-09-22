@@ -35,12 +35,31 @@
   justify-content: center;
   text-align: center;
 }
+
 .product-info {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.add-to-cart-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.add-to-cart-button:hover {
+  background-color: #377c3a;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 img {

@@ -51,7 +51,7 @@ const Products = () => {
                     {/* < ProductCounter /> */}
                   </div>
                 </div>
-                <input type="submit" value="add"/>
+                <input type="submit" value="add" className="add-to-cart-button"/>
               
               </Link>
              
