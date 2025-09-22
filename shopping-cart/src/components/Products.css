@@ -23,7 +23,8 @@
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
-  margin-bottom: 5px;
+  margin: 0 0 20px 25px;
+  justify-content: center;
 }
 
 .link__to__shop{
@@ -31,9 +32,9 @@
   color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 20px 20px 20px 20px;
 }
 
 .product-info {
