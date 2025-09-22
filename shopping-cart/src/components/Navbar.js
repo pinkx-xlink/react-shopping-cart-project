@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { Button } from './Button';
+import cartImg from '../images/cart.svg';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -23,6 +24,8 @@ function Navbar() {
     }, []);
 
     window.addEventListener('resize', showButton);
+
+    console.log('nav bar');
 
 
   return (
@@ -60,7 +63,12 @@ function Navbar() {
                         className='nav-links' 
                         onClick={closeMobileMenu}
                         >
-                        Cart
+                        <img 
+                        src={cartImg} 
+                        alt="Cart" 
+                        height={"50px"}
+                        width={"50px"}
+                        />
                         </Link>
                     </li>
                     {/*<li className='nav-item'>
