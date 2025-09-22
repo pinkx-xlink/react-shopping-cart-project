@@ -14,7 +14,7 @@ function ItemDetail({ handleClick,  }) {
             {/* 'card' classname gives it the css for Home page cards */}
             <div className='card'>
                 <div className='product_info'>
-                    <p>Product id: {id}</p>
+                    {/* <p>Product id: {id}</p> */}
                     <p>price: {price}</p>
                     <p>item: {title}</p>
                 </div>
