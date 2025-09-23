@@ -52,12 +52,9 @@ return;
 
   return (
     <>
-      <Link to="/cart">Checkout</Link>
+      {/* <Link to="/cart">Checkout</Link> */}
       <h1 className='shop'>SHOP</h1>
       < Products />
-
-        
-
     </>
   )
 }
