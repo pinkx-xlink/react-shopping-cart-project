@@ -10,31 +10,27 @@ const Signup = () => {
     const iconClose = document.querySelector('.icon-close');
 
 
-    registerLink.addEventListener('click', () => {
-        wrapper.classList.add('active');
-    });
+    // registerLink.addEventListener('click', () => {
+    //     wrapper.classList.add('active');
+    // });
 
-    loginLink.addEventListener('click', () => {
-        wrapper.classList.remove('active');
-    });
+    // loginLink.addEventListener('click', () => {
+    //     wrapper.classList.remove('active');
+    // });
 
-    btnPopup.addEventListener('click', () => {
-        wrapper.classList.add('active-popup');
-    });
+    // btnPopup.addEventListener('click', () => {
+    //     wrapper.classList.add('active-popup');
+    // });
 
-    iconClose.addEventListener('click', () => {
-        wrapper.classList.remove('active-popup');
-    });
+    // iconClose.addEventListener('click', () => {
+    //     wrapper.classList.remove('active-popup');
+    // });
 
   return (
     <>
       <header>
             <h2 className="logo">MyWebsite</h2>
             <nav className="navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
                 <button className="btnLogin-popup">Login</button>
             </nav>
         </header>
@@ -70,7 +66,7 @@ const Signup = () => {
             </div>
 
 
-            <div class="form-box register">
+            <div className="form-box register">
                 <h2>Registration</h2>
                 <form action="#">
                     <div className="input-box">
