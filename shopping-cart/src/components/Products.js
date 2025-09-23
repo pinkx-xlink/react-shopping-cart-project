@@ -46,7 +46,7 @@ const Products = () => {
                 <div className="product-info">
                   <img src={product.image} alt="#"/>
                   <div className="card-description">
-                    <h6> Description: {product.description} </h6>
+                    <h4> Description: {product.description.slice(0, 150)}... </h4>
                     {/* < ProductCounter /> */}
                   </div>
                 </div>
