@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import './ItemDetails.css'
 import CardItem from './CardItem';
 function ItemDetail({ handleClick,  }) {
-    const { id, price, title } = useParams();
-    let item = {id, price, title};
+    const { image, id, price, title } = useParams();
+    let item = { image, id, price, title};
 
     console.log(item);
 
@@ -15,7 +15,8 @@ function ItemDetail({ handleClick,  }) {
             <div className='card'>
                 <div className='product_info'>
                     {/* <p>Product id: {id}</p> */}
-                    <p>price: {price}</p>
+                    <img src={image} alt="product"/>
+                    <p>${price}</p>
                     <p>item: {title}</p>
                 </div>
                 <p>Amount: {item.setItemAmount}</p>
