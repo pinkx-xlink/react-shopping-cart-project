@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import './ItemDetails.css'
 import CardItem from './CardItem';
+
+// TO-DO: 1. pass handleClick from Shop to here via Products
+// 2. TROUBLESHOOT PRODUCT IMAGES; find out how to import
 function ItemDetail({ handleClick,  }) {
     const { image, id, price, title } = useParams();
     let item = { image, id, price, title};
