@@ -2,6 +2,8 @@ import React from 'react';
 // import './signup.css';
 import background from './background.jpg';
 
+// TO DO: split login and signup into separate components
+
 const Signup = () => {
     const wrapper = document.querySelector('.wrapper');
     const loginLink = document.querySelector('.login-link');
