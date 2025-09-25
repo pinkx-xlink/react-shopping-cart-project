@@ -1,6 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
-import './signup.css';
+// import './signup.css';
 import background from './background.jpg';
 
 const Signup = () => {
@@ -14,48 +13,27 @@ const Signup = () => {
     // registerLink.addEventListener('click', () => {
     //     wrapper.classList.add('active');
     // });
-    const [registerActive, setRegisterActive] = useState(false);
-
-    const handleRegisterClick = () => {
-        setRegisterActive(true);
-    };
-
 
     // loginLink.addEventListener('click', () => {
     //     wrapper.classList.remove('active');
     // });
-    const [loginActive, setLoginActive] = useState(false);
-
-    const handleLoginClick = () => {
-        setLoginActive(true);
-    };
 
     // btnPopup.addEventListener('click', () => {
     //     wrapper.classList.add('active-popup');
     // });
-    const [popupActive, setPopupActive] = useState(false);
-
-    const handlePopupClick = () => {
-        setPopupActive(true);
-    };
 
     // iconClose.addEventListener('click', () => {
     //     wrapper.classList.remove('active-popup');
     // });
-    const [closeActive, setCloseActive] = useState(false);
-
-    const handleCloseClick = () => {
-        setCloseActive(true);
-    };
 
   return (
     <>
-      {/* <header>
+      <header>
             <h2 className="logo">MyWebsite</h2>
             <nav className="navigation">
                 <button className="btnLogin-popup">Login</button>
             </nav>
-        </header> */}
+        </header>
 
         <div className="wrapper">
             <span className="icon-close">
