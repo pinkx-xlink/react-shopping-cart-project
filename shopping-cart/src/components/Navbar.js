@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { Button } from './Button';
 import cartImg from '../images/cart.svg';
+import Signup from './pages/Signup';
 
 function Navbar() {
     const [click, setClick] = useState(false);

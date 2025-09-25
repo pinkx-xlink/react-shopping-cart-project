@@ -1,5 +1,5 @@
 import React from 'react';
-// import './signup.css';
+import './signup.css';
 import background from './background.jpg';
 
 const Signup = () => {
