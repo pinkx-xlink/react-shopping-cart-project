@@ -45,18 +45,21 @@ const Cart = ({ cart, setCart, handleChange }) => {
                         <button onClick={() => handleChange(item.id, -1)}>-</button>
                     </div>
                     <div className='item_info'>
-                        <span>{item.title}{item.price}</span>
+                        <div className='cart_item'>
+                            <p>{item.title}</p> 
+                            <p>${item.price}</p>
+                        </div>
                         <button className="remove_btn" onClick={() => handleRemove(item.id)}>Remove All</button>
                     </div>
                 </div>
             ))}
-            <p>CART</p>
+            
             <div>{results}</div>
             <ul>  </ul>
             <div className='total'>
-                <span>Subtotal: {prettyPrice} ({cart.length} items)</span>
-                <p>Tax: {salesTax}</p>
-                <span>Total: {totalPrice}</span>
+                <span>Subtotal: ${prettyPrice} ({cart.length} items)</span>
+                <p>Tax: ${salesTax}</p>
+                <span id='total-price'>Total: ${totalPrice}</span>
             </div>
         </article>
     );

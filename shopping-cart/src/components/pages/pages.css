@@ -79,6 +79,15 @@ article {
     height: 50px;
 }
 
+.cart_item {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
 .total {
     display: flex;
     flex-direction: column;
@@ -90,4 +99,11 @@ article {
     width: 100%;
     padding-bottom: 3rem;
     padding-top: 3rem;
+}
+
+#total-price {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  width: 60%;
+  text-align: center;
 }
