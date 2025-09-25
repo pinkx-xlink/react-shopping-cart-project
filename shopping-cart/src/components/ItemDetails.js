@@ -28,8 +28,7 @@ function ItemDetail({ handleClick,  }) {
                     <Link to="/shop"> Add to Cart </Link>
                 </button>
                 <div className='nav_btns'>
-                    
-                    <Link to="/cart"> Go to Cart </Link>
+                    <Link to="/cart" className='link-to-cart'> Go to Cart </Link>
                 </div>
             </div>
         </div>

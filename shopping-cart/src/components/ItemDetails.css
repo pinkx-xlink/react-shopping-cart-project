@@ -1,7 +1,5 @@
 .card_container {
-    border: 3px solid white;
     border-radius: 25px;
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -33,6 +31,10 @@
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+.link-to-cart:hover {
+    text-decoration: underline;
 }
 
 .product_info {
