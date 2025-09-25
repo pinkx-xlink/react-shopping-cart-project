@@ -8,6 +8,7 @@
     text-align: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    backdrop-filter: blur(20px);
 }
 
 .close-button {
