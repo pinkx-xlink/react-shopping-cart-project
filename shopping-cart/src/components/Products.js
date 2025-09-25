@@ -43,7 +43,7 @@ const Products = () => {
             <div key={product.id} className="card">
               <Link 
               className="link__to__shop" 
-              to={`/itemDetail/${product.image}/${product.id}/${product.price}/${product.title}`}>
+              to={`/itemDetail/${product.id}/${product.price}/${product.title}`}>
                 <h2>{product.title}</h2>
                 <div className="product-info">
                   <img src={product.image} alt="#"/>
