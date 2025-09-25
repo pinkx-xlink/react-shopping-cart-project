@@ -40,7 +40,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                 <div className="cart_box" key={item.id}>
                     <div className='item_amount_el'>
                         <button onClick={() => handleChange(item.id, 1)}>+</button>
-                        <button>{item.amount}</button>
+                        <p>{item.amount}</p>
                         <button onClick={() => handleChange(item.id, -1)}>-</button>
                     </div>
                     <div className='item_info'>

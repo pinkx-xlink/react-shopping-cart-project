@@ -23,7 +23,23 @@ article {
 }
 
 .item_amount_el {
-    border: 5px solid purple;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+.item_amount_el button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
 }
 
 .item_info {
