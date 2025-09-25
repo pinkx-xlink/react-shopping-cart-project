@@ -32,7 +32,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
     return(
         <article>
-             <h1>HELLOOOOO, let's checkout</h1>
+             <h1>Cart</h1>
             {cart.map((item) => (
                 <div className="cart_box" key={item.id}>
                     <div className='item_amount_el'>
@@ -42,7 +42,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                     </div>
                     <div className='item_info'>
                         <span>{item.title}{item.price}</span>
-                        <button onClick={() => handleRemove(item.id)}>Remove All</button>
+                        <button className="remove_btn" onClick={() => handleRemove(item.id)}>Remove All</button>
                     </div>
                 </div>
             ))}
