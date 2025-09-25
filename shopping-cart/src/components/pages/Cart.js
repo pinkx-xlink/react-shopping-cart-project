@@ -35,6 +35,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
     return(
         <article>
+            <Link to="/shop" className='exit-cart-btn'> x </Link>
              <h1>Cart</h1>
             {cart.map((item) => (
                 <div className="cart_box" key={item.id}>
@@ -57,7 +58,6 @@ const Cart = ({ cart, setCart, handleChange }) => {
                 <p>Tax: {salesTax}</p>
                 <span>Total: {totalPrice}</span>
             </div>
-            <Link to="/shop">exit</Link>
         </article>
     );
 };
