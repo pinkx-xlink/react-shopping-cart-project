@@ -9,7 +9,7 @@ import CardItem from './CardItem';
 function ItemDetail({ handleClick,  }) {
     const { id, price, title } = useParams();
     let item = { id, price, title};
-
+    
     console.log(item);
 
     return (
@@ -23,7 +23,9 @@ function ItemDetail({ handleClick,  }) {
                     <p>item: {title}</p>
                 </div>
                 <p>Amount: {item.setItemAmount}</p>
-                <button onClick={() => handleClick(item)}> Add to Cart </button>
+                <button onClick={() => handleClick(item)}>
+                    <Link to="/shop"> Add to Cart </Link>
+                </button>
                 <div className='nav_btns'>
                     <Link to="/shop"> X </Link>
                     <Link to="/cart"> Go to Cart </Link>
