@@ -7,7 +7,10 @@ const Cart = ({ cart, setCart, handleChange }) => {
     };
 
     const price = cart.reduce((total, item) => total + item.amount * item.price, 0);
-    
+    const prettyPrice = price.toFixed(2);
+    const salesTax = (price * 0.15).toFixed(2);
+    const totalPrice = (price + parseFloat(salesTax)).toFixed(2);
+
     const results = [];
     // const showCartItems = ({ cart, setMyItems, handleChange }) => {
     //     setMyItems(cart, id => {
@@ -50,8 +53,9 @@ const Cart = ({ cart, setCart, handleChange }) => {
             <div>{results}</div>
             <ul>  </ul>
             <div className='total'>
-                <span>Total Cart Price</span>
-                <span>R - {price}</span>
+                <span>Subtotal: {prettyPrice} ({cart.length} items)</span>
+                <p>Tax: {salesTax}</p>
+                <span>Total: {totalPrice}</span>
             </div>
             <Link to="/shop">exit</Link>
         </article>
