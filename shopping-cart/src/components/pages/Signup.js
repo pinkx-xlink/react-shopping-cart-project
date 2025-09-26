@@ -1,6 +1,7 @@
 import React from 'react';
 // import './signup.css';
 import background from './background.jpg';
+import { Link } from 'react-router-dom';
 
 // TO DO: split login and signup into separate components
 
@@ -61,12 +62,9 @@ const Signup = () => {
                     justify-content: center;
                     align-items: center;
                     height: 100vh;
-                    /* background: url('background.jpg') no-repeat;
-                    background-size: cover;
-                    background-position: center; */
                 }
 
-                
+
 .logo {
     font-size: 2em;
     color: #fff;
@@ -302,7 +300,9 @@ const Signup = () => {
                     </div>
                     <button type="submit" className="btn">Register</button>
                     <div className="login-register">
-                        <p>Already have an account? <a href="#" className="login-link">Login</a>
+                        <p>Already have an account? 
+                            {/* <a href="#" className="login-link">Login</a> */}
+                            <Link to="/login" className="login-link">Login</Link>
                         </p>
                     </div>
                 </form>
