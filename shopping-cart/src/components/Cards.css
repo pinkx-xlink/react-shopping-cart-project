@@ -4,12 +4,15 @@
   grid-template-columns: repeat(3, 350px);
   grid-template-rows: repeat(1, 300px);
   align-items:end;
+  background: #111;
+  height: 500px;
+  border-radius: 10px;
 }
 
 .cards {
     padding: 1rem;
-    background: #fff;
     text-align: center;
+    height: 100%;
   }
 
   h1 {
@@ -51,6 +54,10 @@
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
+    height: 350px;
+    width: 300px;
+    background-color: #fff;
+    align-items: center;
   }
   
   .cards__item__pic-wrap {

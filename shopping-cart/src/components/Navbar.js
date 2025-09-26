@@ -89,7 +89,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                     >Login 
                     </Link>
-                    </Button>}
+                </Button>}
             </div>
         </nav>
     </>
