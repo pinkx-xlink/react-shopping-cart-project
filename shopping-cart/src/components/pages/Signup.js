@@ -30,13 +30,6 @@ const Signup = () => {
 
   return (
     <>
-      <header>
-            <h2 className="logo">MyWebsite</h2>
-            <nav className="navigation">
-                <button className="btnLogin-popup">Login</button>
-            </nav>
-        </header>
-
         <div className="wrapper">
             <span className="icon-close">
                 <ion-icon name="close"></ion-icon>
