@@ -11,6 +11,7 @@ import Signup from './components/pages/Signup';
 // import SignUp from './components/pages/SignUp';
 import Products from './components/Products';
 import ItemDetail from './components/ItemDetails';
+import Login from './components/pages/Login';
 
 function App() {
  
@@ -72,6 +73,7 @@ function App() {
           <Route path='/' exact element={< Home />}></Route>
           <Route path='/shop' exact element={< Shop />}></Route>
           <Route path='/cart' exact element={< Cart />}></Route>
+          <Route path='/login' exact element={< Login />}></Route>
           <Route path='/signup' exact element={< Signup />}></Route>
           {/* <Route path='/products' exact element={< Products />}></Route>
           <Route path='/sign-up' exact element={< SignUp />}></Route> */}
