@@ -65,10 +65,17 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+  width: 130px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 .add-to-cart-button a {
     text-decoration: none;
     color: white;
+}
+.add-to-cart-link {
+    font-weight: bolder;
 }
 
 .nav_btns a {
