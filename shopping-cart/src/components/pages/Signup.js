@@ -105,7 +105,7 @@ const Signup = () => {
             .wrapper {
             position: relative;
             width: 400px;
-            height: 440px;
+            height: 540px;
             background: transparent;
             border: 2px solid rgba(255, 255, 255, 0.5);
             border-radius: 20px;
@@ -114,18 +114,12 @@ const Signup = () => {
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
-            }
-
-            .wrapper.active {
-                height: 520px;
             }
 
             .wrapper .form-box {
             width: 100%;
             padding: 40px;
             }
-
 
             .wrapper .form-box.register {
                 position: absolute;
@@ -139,6 +133,7 @@ const Signup = () => {
             font-size: 2em;
             color: #162938;
             text-align: center;
+            margin-top: 30px;
             }
 
             .input-box {
@@ -225,7 +220,7 @@ const Signup = () => {
             }
 
             .login-register {
-                margin: 25px 0 10px;
+                margin: 25px 10px 30px;
                 text-align: center;
                 font-size: 0.9em;
                 color: #162938;
