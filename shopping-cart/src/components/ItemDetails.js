@@ -25,7 +25,7 @@ function ItemDetail({ handleClick,  }) {
                 </div>
                 <p>Amount: {item.setItemAmount}</p>
                 <button className='add-to-cart-button' onClick={() => handleClick(item)}>
-                    <Link to="/shop" className='add-to-cart-link'> Add to Cart </Link>
+                    <Link to="/cart" className='add-to-cart-link'> Add to Cart </Link>
                 </button>
                 <div className='nav_btns'>
                     <Link to="/cart" className='link-to-cart'> Go to Cart </Link>
