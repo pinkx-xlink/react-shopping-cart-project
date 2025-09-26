@@ -46,36 +46,19 @@ const Cards = () => {
 
   return (
     <>
-
-
-    <div className="slideshow-container">
-		<div className="slide fade">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20231126110234/ezgifcom-gif-maker-1.webp"
-				alt="Slide 1"/>
-		</div>
-		<div className="slide fade">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20231217134958/Group-23.png" alt="Slide 2"/>
-		</div>
-		<div className="slide fade">
-			<img src=	 
-"https://media.geeksforgeeks.org/wp-content/uploads/20240106180224/Screenshot-2024-01-06-174436.gif"
-				alt="Slide 3"/>
-		</div>
-		<div className="slide fade">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20240109190054/Screenshot-2024-01-09-185442.gif"
-				alt="Slide 3"/>
-		</div>
-        <div className="slide fade">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20231123180952/Group-18.png" alt="Slide 3"/>
-		</div>
-		<div className="slide fade">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20231121180023/Group-17.png" alt="Slide 3"/>
-		</div>
+    
+    <div className='slideshow-container'>
+    {data.slice(0, 6).map((product)=> (
+        <div key={product.id} className="slide fade">
+            {/* <h2>{product.title}</h2> */} 
+            <CardItem 
+            src={product.image}
+            text={product.title}
+            label="New!"
+            path="/shop"
+            />
+        </div>
+    ))}
 	</div>
 
 
