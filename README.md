@@ -35,3 +35,10 @@ To-do:
   input field
   2. Assign the # to the appropriate product
   2. Get that ^ # when we hit the "add to cart" btn, and add that qty of the item to the cart
+
+  Revamping this project as of 9/25/25
+  To-do 9/26/25:
+  - Cards.js -> turn the cards into an animated image carousel to make the Home page more engaging & interesting
+  - Animate the switch from Login to Registration form (and vice versa)
+  - Utilize a more appealing color palette
+  - Add item description to ItemDetail; troubleshoot why I can't seem to add more params to ItemDetail
