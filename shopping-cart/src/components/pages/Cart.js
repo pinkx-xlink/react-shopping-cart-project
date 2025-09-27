@@ -60,6 +60,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                 <span>Subtotal: ${prettyPrice} ({cart.length} items)</span>
                 <p>Tax: ${salesTax}</p>
                 <span id='total-price'>Total: ${totalPrice}</span>
+                <button className='checkout-button'>Checkout</button>
             </div>
         </article>
     );

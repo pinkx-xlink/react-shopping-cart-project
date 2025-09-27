@@ -111,3 +111,19 @@ article {
   width: 60%;
   text-align: center;
 }
+
+.checkout-button {
+  background-color: #fca311;
+  border: none;
+  height: 50px;
+  width: 200px;
+  border-radius: 25px;
+  color: black;
+  font-weight: 800;
+  font-size: 30px;
+  box-shadow: 2px 1px 10px 1px #14213d;
+}
+.checkout-button:hover {
+  background-color: #fb8500;
+  cursor: pointer;
+}
