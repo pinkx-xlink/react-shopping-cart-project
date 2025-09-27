@@ -1,0 +1,45 @@
+   #bannerContainer {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            #bannerSlider {
+                display: flex;
+                width: 300%;
+                animation: slide 15s infinite;
+            }
+
+            .banner {
+                width: 33.33%;
+                height: 300px;
+                text-align: center;
+                color: white;
+                padding: 50px;
+            }
+
+            .banner:nth - child(1) {
+                background-color: #007BFF;
+            }
+
+            .banner:nth - child(2) {
+                background-color: #28a745;
+            }
+
+            .banner:nth - child(3) {
+                background-color: #FFC107;
+            }
+
+            @keyframes slide {
+                0% {
+                    transform: translateX(0);
+                }
+                33% {
+                    transform: translateX(-33.33%);
+                }
+                66% {
+                    transform: translateX(-66.66%);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
