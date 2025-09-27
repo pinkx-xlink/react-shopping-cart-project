@@ -1,14 +1,9 @@
 import React from 'react';
+import './Banner.css';
 
 const Banner = () => {
   return (
     <div>
-        <head>
-        <style>
-         
-        </style>
-        </head>
-
     <body>
         <div id="bannerContainer">
             <div id="bannerSlider">
