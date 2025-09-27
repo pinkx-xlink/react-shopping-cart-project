@@ -44,5 +44,6 @@ To-do:
   - Add item description to ItemDetail; troubleshoot why I can't seem to add more params to ItemDetail
 
   9/27/25
-  Photo by Fatma: https://www.pexels.com/photo/monstera-plant-in-soft-evening-light-32304047/
-  
+  LOGIN/SIGNUP PAGES: Photo by Fatma: https://www.pexels.com/photo/monstera-plant-in-soft-evening-light-32304047/
+
+Photo by Nemika F: https://www.pexels.com/photo/aerial-view-of-solitary-man-on-pedestrian-bridge-29112816/
