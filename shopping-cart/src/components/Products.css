@@ -63,9 +63,9 @@
   margin-top: 10px;
 }
 .price {
-  background-image: linear-gradient(to right, #ff105f, #ffac068c);
+  background-image: linear-gradient(to right, #fc78a4, #ffac068c);
   border-top-left-radius: 25px;
-  border-bottom-left-radius: 15%;
+  border-bottom-left-radius: 25px;
   height: 100%;
   width: 170px;
   display: flex;
