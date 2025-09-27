@@ -46,4 +46,7 @@ To-do:
   9/27/25
   LOGIN/SIGNUP PAGES: Photo by Fatma: https://www.pexels.com/photo/monstera-plant-in-soft-evening-light-32304047/
 
-Photo by Nemika F: https://www.pexels.com/photo/aerial-view-of-solitary-man-on-pedestrian-bridge-29112816/
+HOME PAGE: Photo by Nemika F: https://www.pexels.com/photo/aerial-view-of-solitary-man-on-pedestrian-bridge-29112816/
+
+            </style>
+SHOP: 
