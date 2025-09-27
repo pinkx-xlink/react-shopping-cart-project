@@ -32,31 +32,29 @@ function Navbar() {
 
   return (
     <>
-    <div>
-              
-                    <div id="bannerContainer">
-                        <div id="bannerSlider">
-                            <div class="banner">
-                                <h1>LIMITED TIME DEALS</h1>
-                                <p>This week only</p>
-                            </div>
-                            <div class="banner">
-                                <h1>Free Shipping on Orders $75+</h1>
-                                <p>Use code: FREE75 for extra 10% off</p>
-                            </div>
-                            <div class="banner">
-                                <h1>SEASONAL SALE</h1>
-                                <p>*Special cashback offer. Limited time only!</p>
-                            </div>
-                        </div>
+        <div>
+            <div id="bannerContainer">
+                <div id="bannerSlider">
+                    <div class="banner">
+                        <h1>LIMITED TIME DEALS</h1>
+                        <p>This week only</p>
                     </div>
-                
+                    <div class="banner">
+                        <h1>Free Shipping on Orders $75+</h1>
+                        <p>Use code: FREE75 for extra 10% off</p>
+                    </div>
+                    <div class="banner">
+                        <h1>SEASONAL SALE</h1>
+                        <p>*Special cashback offer. Limited time only!</p>
+                    </div>
                 </div>
+            </div>
+        </div>
         <nav className="navbar">
             <div className="navbar-container">
                 {/* replaces <a> tag  */}
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                  OnlineShop 
+                  FakeShop 
                   <i className="fab fa-typo3" />   
                 </Link>
 
