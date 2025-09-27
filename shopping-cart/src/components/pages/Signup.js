@@ -209,7 +209,7 @@ const Signup = () => {
             .btn {
                 width: 100%;
                 height: 50px;
-                background: #162938;
+                background: #fca311;
                 border: none;
                 outline: none;
                 border-radius: 6px;
