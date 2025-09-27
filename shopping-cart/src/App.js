@@ -12,7 +12,6 @@ import Signup from './components/pages/Signup';
 import Products from './components/Products';
 import ItemDetail from './components/ItemDetails';
 import Login from './components/pages/Login';
-import Banner from './components/Banner';
 
 function App() {
  
@@ -69,7 +68,6 @@ function App() {
 
   return (
       <Router>
-        <Banner />
         <Navbar />
         <Switch>
           <Route path='/' exact element={< Home />}></Route>

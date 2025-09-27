@@ -1,9 +1,9 @@
    #bannerContainer {
+                bottom: 0;
                 width: 100%;
                 overflow: hidden;
-                background-color: aqua;
+                background-image: linear-gradient(to right, #ff7e5f, #feb47b);
                 height: 110px;
-                margin-bottom: 20px;
             }
 
             #bannerSlider {
