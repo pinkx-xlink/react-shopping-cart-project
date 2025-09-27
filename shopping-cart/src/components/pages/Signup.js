@@ -1,6 +1,6 @@
 import React from 'react';
 // import './signup.css';
-import background from './background.jpg';
+import background from './plant-background.jpg';
 import { Link } from 'react-router-dom';
 
 // TO DO: split login and signup into separate components

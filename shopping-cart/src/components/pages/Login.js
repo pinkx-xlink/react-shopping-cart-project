@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import background from './background.jpg';
+import background from './plant-background.jpg';
 
 const Login = () => {
   
