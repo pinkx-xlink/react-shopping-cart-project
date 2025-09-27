@@ -2,6 +2,15 @@ h1 {
 	font-size: 4vw;
 }
 
+.product-cards-container {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cards {
+  
+}
+
 /* .slideshow-container {
 	width: 60%;
 	aspect-ratio: 1;
@@ -50,10 +59,11 @@ img {
 	margin: auto;
 	overflow: hidden;
 	border-radius: 10px;
-	box-shadow: 2px 2px 5px
+	box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    background-color: #ffffffa1;
 }
-
-
 
   image {
     width: 100%;
@@ -66,10 +76,7 @@ img {
   }
   
   .cards__container {
-    display: flex;
-    flex-flow: column;
     align-items: center;
-    max-width: 1120px;
     width: 100%;
     margin: 0 auto;
   }
@@ -94,14 +101,13 @@ img {
     display: flex;
     flex-flow: column;
     width: 100%;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
-    background-color: #fff;
+    
     align-items: center;
+    padding-top: 50px;
   }
   
   .cards__item__pic-wrap {
