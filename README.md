@@ -42,3 +42,7 @@ To-do:
   - Animate the switch from Login to Registration form (and vice versa)
   - Utilize a more appealing color palette
   - Add item description to ItemDetail; troubleshoot why I can't seem to add more params to ItemDetail
+
+  9/27/25
+  Photo by Fatma: https://www.pexels.com/photo/monstera-plant-in-soft-evening-light-32304047/
+  
