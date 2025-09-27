@@ -1,5 +1,5 @@
 body {
-  background-color: lightgrey;
+  background-color: #e5e5e5;
 }
 
 /* Shoppig cart container */
@@ -31,27 +31,28 @@ article {
 
 .cart_box {
   display: flex;
-  background-color: thistle;
-  border-radius: 15px;
+  background-color: ffffff;
+  border-radius: 25px;
   height: 35px;
   width: 80%;
   height: 50px;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 2px 1px 10px 1px grey;
+  box-shadow: 2px 1px 10px 1px #14213d;
 }
 
 .item_amount_el {
-    background-color: lightblue;
-    border-radius: 50%;
+    background-color: #ffffff;
+    border-radius: 50px;
     display: flex;
     height: 50px;
     align-items: center;
     justify-content: space-between;
     width: 100px;
+    border: 1px solid #fca311;
 }
 .item_amount_el button {
-    background-color: rgb(255, 255, 255);
+    background-color: #fca311;
     border: none;
     cursor: pointer;
     font-weight: bold;
