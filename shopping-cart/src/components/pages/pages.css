@@ -31,7 +31,7 @@ article {
 
 .cart_box {
   display: flex;
-  background-color: ffffff;
+  background-color: #ffffff;
   border-radius: 25px;
   height: 35px;
   width: 80%;
@@ -92,20 +92,21 @@ article {
 .total {
   position: absolute;
   bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: lightblue;
-    width: 100%;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ffffff;
+  width: 100%;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid #023047;
 }
 
 #total-price {
-  border-top: 1px solid black;
+  border-top: 1px solid #023047;
   padding-top: 10px;
   width: 60%;
   text-align: center;
