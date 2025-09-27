@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Bannner = () => {
+const Banner = () => {
   return (
     <div>
         <style>
@@ -73,4 +73,4 @@ const Bannner = () => {
   )
 }
 
-export default Bannner
+export default Banner
