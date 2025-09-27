@@ -56,23 +56,39 @@
   text-align: center;
 }
 
-.add-to-cart-button {
+.price-and-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.price {
+  background-image: linear-gradient(to right, #ff105f, #ffac068c);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 15%;
+  height: 100%;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -25px;
+}
+.add {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 26px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 50px;
   width: 40px;
   height: 40px;
 }
-.add-to-cart-button:hover {
+.add:hover {
   background-color: #377c3a;
-  animation: rotate 0.5s linear;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  animation: rotate 0.3s linear;
 }
 
 img {

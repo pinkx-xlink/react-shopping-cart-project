@@ -52,8 +52,11 @@ const Products = () => {
                     {/* < ProductCounter /> */}
                   </div>
                 </div>
-                <h3><u>${product.price}</u></h3>
-                <button type="submit" className="add-to-cart-button">+</button>
+                <span className="price-and-button">
+                  <h3 className="price"><u>${product.price}</u></h3>
+                  <button type="submit" className="add">+</button>
+                </span>
+                
               </Link>
              
             </div>   
