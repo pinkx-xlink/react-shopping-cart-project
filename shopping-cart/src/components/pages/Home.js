@@ -12,9 +12,9 @@ function Home() {
             body {
             background: url(${background}) no-repeat center center fixed;
             background-size: cover;
+            backdrop-filter: blur(5px);
             }
-        `}
-        </style>
+            `}</style>
         </>
     )
 }

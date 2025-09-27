@@ -5,6 +5,7 @@ import ItemDetail from '../ItemDetails';
 import Cart from './Cart';
 import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import background from './img/ocean-background.jpg'
 
 const Shop = () => {
   const [show, setShow] = useState(true);
@@ -55,6 +56,13 @@ return;
       {/* <Link to="/cart">Checkout</Link> */}
       <h1 className='shop'>SHOP</h1>
       < Products />
+      <style>{`
+        body {
+        background: url(${background}) no-repeat center center fixed;
+        background-size: cover;
+        backdrop-filter: blur(5px);
+        }
+      `}</style>
     </>
   )
 }
