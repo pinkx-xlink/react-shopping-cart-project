@@ -53,7 +53,7 @@ const Products = () => {
                   </div>
                 </div>
                 <h3><u>${product.price}</u></h3>
-                <input type="submit" value="add" className="add-to-cart-button"/>
+                <button type="submit" className="add-to-cart-button">+</button>
               </Link>
              
             </div>   
