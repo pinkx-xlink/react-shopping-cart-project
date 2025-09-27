@@ -39,7 +39,8 @@
                 66% {
                     transform: translateX(-66.66%);
                 }
+                /* originally 0 - resets to initial position */
                 100% {
-                    transform: translateX(0);
+                    transform: translateX(-66.66%);
                 }
             }

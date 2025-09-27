@@ -9,15 +9,15 @@ const Banner = () => {
             <div id="bannerSlider">
                 <div class="banner">
                     <h1>LIMITED TIME DEALS</h1>
-                    <p>Some information here</p>
+                    <p>This week only</p>
                 </div>
                 <div class="banner">
                     <h1>Free Shipping on Orders $75+</h1>
-                    <p>More information</p>
+                    <p>Use code: FREE75 for extra 10% off</p>
                 </div>
                 <div class="banner">
                     <h1>SEASONAL SALE</h1>
-                    <p>Final information</p>
+                    <p>*Special cashback offer. Limited time only!</p>
                 </div>
             </div>
         </div>
