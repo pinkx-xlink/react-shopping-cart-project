@@ -131,7 +131,7 @@ const Signup = () => {
 
             .form-box h2 {
             font-size: 2em;
-            color: #162938;
+            color: #fff;
             text-align: center;
             margin-top: 30px;
             }
@@ -140,7 +140,7 @@ const Signup = () => {
                 position: relative;
                 width: 100%;
                 height: 50px;
-                border-bottom: 2px solid #162938;
+                border-bottom: 2px solid #fff;
                 margin: 30px 0;
             }
 
@@ -148,7 +148,7 @@ const Signup = () => {
                 position: absolute;
                 top: 50%;
                 left: 5px;
-                color: #162938;
+                color: #fff;
                 font-size: 1em;
                 pointer-events: none;
                 transition: .5s;
@@ -159,7 +159,7 @@ const Signup = () => {
             .input-box input:focus ~ label,
             .input-box input:valid ~ label {
                 top: -5px;
-                color: #162938;
+                color: #fff;
                 font-size: 0.8em;
             }
 
@@ -170,7 +170,7 @@ const Signup = () => {
                 border: none;
                 outline: none;
                 font-size: 1em;
-                color: #162938;
+                color: #fff;
                 font-weight: 600;
                 padding: 0 35px 0 5px;
             }
@@ -178,7 +178,7 @@ const Signup = () => {
             .input-box .icon {
                 position: absolute;
                 right: 8px;
-                color: #162938;
+                color: #fff;
                 font-size: 1.2em;
                 cursor: pointer;
                 line-height: 57px;
@@ -187,18 +187,18 @@ const Signup = () => {
             .remember-forgot {
                 margin: -15px 0 15px;
                 font-size: 0.9em;
-                color: #162938;
+                color: #fff;
                 display: flex;
                 justify-content: space-between;
             }
 
             .remember-forgot label input {
-                accent-color: #162938;
+                accent-color: #fff;
                 margin-right: 3px;
             }
 
             .remember-forgot a {
-                color: #162938;
+                color: #fff;
                 text-decoration: none;
             }
 
@@ -223,12 +223,12 @@ const Signup = () => {
                 margin: 25px 10px 30px;
                 text-align: center;
                 font-size: 0.9em;
-                color: #162938;
+                color: #fff;
                 font-weight: 500;
             }
 
             .login-register p a {
-                color: #162938;
+                color: #4da7ecff;
                 text-decoration: none;
                 font-weight: 600;
             }
