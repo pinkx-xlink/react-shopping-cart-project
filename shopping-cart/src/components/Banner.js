@@ -8,15 +8,15 @@ const Banner = () => {
         <div id="bannerContainer">
             <div id="bannerSlider">
                 <div class="banner">
-                    <h1>First Slide</h1>
+                    <h1>LIMITED TIME DEALS</h1>
                     <p>Some information here</p>
                 </div>
                 <div class="banner">
-                    <h1>Second Slide</h1>
+                    <h1>Free Shipping on Orders $75+</h1>
                     <p>More information</p>
                 </div>
                 <div class="banner">
-                    <h1>Third Slide</h1>
+                    <h1>SEASONAL SALE</h1>
                     <p>Final information</p>
                 </div>
             </div>
