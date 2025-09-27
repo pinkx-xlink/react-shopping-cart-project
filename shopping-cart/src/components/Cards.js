@@ -24,44 +24,8 @@ const Cards = () => {
         .finally(() => setLoading(false));
     }, []);
     
-
-
-    let currentSlide = 0;
-
-    function showSlide(index) {
-        const slides = document.querySelectorAll('.slideshow-container .slide');
-
-        slides.forEach((cards, i) => {
-            cards.style.display = i === index ? 'flex' : 'none';
-        });
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % 3;
-        showSlide(currentSlide);
-    }
-
-    setInterval(nextSlide, 2000);
-
-
   return (
     <>
-    
-    <div className='slideshow-container'>
-    {data.slice(0, 6).map((product)=> (
-        <div key={product.id} className="slide fade">
-            {/* <h2>{product.title}</h2> */} 
-            <CardItem 
-            src={product.image}
-            text={product.title}
-            label="New!"
-            path="/shop"
-            />
-        </div>
-    ))}
-	</div>
-
-
     <div className='products-container'>
         {loading && (
             <div> 
@@ -70,33 +34,30 @@ const Cards = () => {
             </div>
         )}
 
-
+<div className='product-cards-container'>
+{data.slice(0, 3).map((product)=> (
+    
+    <div key={product.id} className="cards">
+        {/* <h2>{product.title}</h2> */}
+        <div className="cards__container">
+            <div className="cards__wrapper">
+                <ul className="cards__items">
+                <CardItem 
+                    src={product.image}
+                    text={product.title}
+                    label="New!"
+                    path="/shop"
+                    />
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    ))}
+    </div>
     </div>
     </>
   )
 }
 
 export default Cards;
-
-
-{/* <div className='product-cards-container'>
-{data.slice(0, 3).map((product)=> (
-    
-    <div key={product.id} className="cards">
-        {/* <h2>{product.title}</h2> */}
-    //     <div className="cards__container">
-    //         <div className="cards__wrapper">
-    //             <ul className="cards__items fade">
-    //             <CardItem 
-    //                 src={product.image}
-    //                 text={product.title}
-    //                 label="New!"
-    //                 path="/shop"
-    //                 />
-    //             </ul>
-    //         </div>
-    //     </div>
-    // </div>
-    
-    //))}
-    // </div> */}
