@@ -1,12 +1,11 @@
 import React from 'react'
-import Welcome from '../Welcome'
 import Cards from '../Cards';
 import background from './img/stranger-background.jpg';
 
 function Home() {
     return (
         <>
-            <Welcome />
+            
             <Cards />
             <style>{`
             body {
