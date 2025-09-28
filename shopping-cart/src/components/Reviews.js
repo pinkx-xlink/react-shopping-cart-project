@@ -3,6 +3,7 @@ import React from 'react'
 const Reviews = () => {
   return (
     <div>Reviews
+        
         <div className='reviews_container'>
             <div className='review_card'>
                 <img src=''></img>
@@ -10,6 +11,8 @@ const Reviews = () => {
                 <p>⭐⭐⭐⭐⭐</p>
             </div>
         </div>
+
+        
     </div>
   )
 }
