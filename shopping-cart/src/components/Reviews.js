@@ -10,6 +10,7 @@ const Reviews = () => {
                 <img src=''></img>
                 <h3>"Absolutely in love with this!"</h3>
                 <p>⭐⭐⭐⭐⭐</p>
+                <h4> - Rose </h4>
             </div>
         </div>
 

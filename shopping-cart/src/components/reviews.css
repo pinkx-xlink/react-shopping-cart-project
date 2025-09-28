@@ -2,3 +2,7 @@
     background-color: white;
     height: 100%;
 }
+
+h4, h3 {
+    font-style: italic;
+}
