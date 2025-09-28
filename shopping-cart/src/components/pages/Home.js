@@ -1,6 +1,7 @@
 import React from 'react'
 import Cards from '../Cards';
 import background from './img/stranger-background.jpg';
+import Reviews from '../Reviews';
 
 function Home() {
     return (
@@ -14,6 +15,8 @@ function Home() {
             
             
             <Cards />
+            <Reviews />
+            
             <style>{`
             body {
             background: url(${background}) no-repeat center center fixed;
