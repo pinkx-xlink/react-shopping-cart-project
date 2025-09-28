@@ -2,6 +2,30 @@ body {
   background-color: #e5e5e5;
 }
 
+h1 {
+  font-style: italic;
+}
+
+.greeting_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.greeting {
+  color: black;
+  background-color: #e5e5e5c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 50%;
+}
+
 /* Shoppig cart container */
 article {
   display: flex;

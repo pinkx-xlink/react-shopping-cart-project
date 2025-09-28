@@ -5,6 +5,13 @@ import background from './img/stranger-background.jpg';
 function Home() {
     return (
         <>
+            <div className='greeting_container'>
+                <div className='greeting'>
+                    <h1>Welcome</h1>
+                    <p>Shop our top sellers:</p>
+                </div>
+            </div>
+            
             
             <Cards />
             <style>{`
