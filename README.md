@@ -50,3 +50,6 @@ HOME PAGE: Photo by Nemika F: https://www.pexels.com/photo/aerial-view-of-solita
 
             </style>
 SHOP: 
+
+REVIEWS: 
+Photo by Ahmed ؜: https://www.pexels.com/photo/young-woman-by-galata-bridge-in-istanbul-33646928/
