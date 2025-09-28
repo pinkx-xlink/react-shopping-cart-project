@@ -1,5 +1,6 @@
 import React from 'react'
 import './reviews.css';
+import image1 from './reviewImg/lady.jpg';
 
 const Reviews = () => {
   return (
@@ -7,7 +8,7 @@ const Reviews = () => {
         
         <div className='reviews_container'>
             <div className='review_card'>
-                <img src=''></img>
+                <img src={image1} alt="Lady leaning on railing above the water"></img>
                 <h3>"Absolutely in love with this!"</h3>
                 <p>⭐⭐⭐⭐⭐</p>
                 <h4> - Rose </h4>
