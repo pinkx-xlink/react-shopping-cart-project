@@ -38,6 +38,15 @@
   justify-content: center;
 }
 
+h2 {
+  position: absolute;
+  top: 5px;
+  margin-bottom: 120px;
+  text-align: center;
+  display: flex;
+  align-self: center;
+}
+
 .link__to__shop{
   text-decoration: none;
   color: black;
@@ -54,6 +63,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 40px;
 }
 
 .price-and-button {
