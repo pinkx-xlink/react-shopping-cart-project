@@ -1,5 +1,20 @@
 .reviews_container {
-    background-color: white;
+    background-color: #14213d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.review_card {
+    border: 2px solid #14213d;
+    background-color: #e5e5e5;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 h4, h3 {
