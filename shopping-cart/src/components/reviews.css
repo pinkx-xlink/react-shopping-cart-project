@@ -14,13 +14,18 @@
     border-top-right-radius: 25px;
     display: flex;
     flex-direction: column;
+
+}
+
+.image-container {
+  height: 200px;
+}
+
+.review_card img {
+    border-radius: 50%;
     
 }
 
 h4, h3 {
     font-style: italic;
-}
-
-img {
-  
 }
