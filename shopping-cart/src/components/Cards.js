@@ -45,7 +45,7 @@ const Cards = () => {
                 <CardItem 
                     src={product.image}
                     text={product.title}
-                    label="New!"
+                    label="Best Seller"
                     path="/shop"
                     />
                 </ul>
