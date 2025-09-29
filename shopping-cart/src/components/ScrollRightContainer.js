@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import placeholder from './reviewImg/lady.jpg';
 import placeholder1 from './reviewImg/lady1.jpg';
 import placeholder2 from './reviewImg/guy.jpg';
-import './animatedCards.css';
+//  import './animatedCards.css';
 
 const AnimatedCards = () => {
 const sliderRef = useRef(null);
