@@ -18,7 +18,7 @@ h1 {
 }
 
 .cards {
-  width: 50%;
+  width: 100%;
 }
 
 /* .slideshow-container {
@@ -64,6 +64,7 @@ img {
 
 .cards__wrapper {
   width: 60%;
+  height: 500px;
 	aspect-ratio: 1;
 	position: relative;
 	margin: auto;
@@ -100,10 +101,12 @@ img {
   
   .cards__items {
     margin-bottom: 4px;
+    
   }
   
   .cards__item {
     display: flex;
+    
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
@@ -112,13 +115,11 @@ img {
   
   .cards__item__link {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     width: 100%;
-    
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
-    
     align-items: center;
     padding-top: 50px;
   }

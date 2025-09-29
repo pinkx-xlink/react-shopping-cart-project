@@ -47,7 +47,7 @@ const Cards = () => {
                     text={product.title}
                     label="Best Seller"
                     path="/shop"
-                    />
+                />
                 </ul>
             </div>
         </div>
