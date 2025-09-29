@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import "./App.css"; // Import CSS for animations
 
+import placeholder1 from './reviewImg/lady1.jpg';
+import placeholder2 from './reviewImg/guy.jpg';
+import './animatedCards.css';
+import { Placeholder } from "react-bootstrap";
+
+
 const ImageSlide = ({ src, alt }) => {
   // Hook to detect if the image is in view
   const { ref, inView } = useInView({
@@ -21,9 +27,7 @@ const ImageSlide = ({ src, alt }) => {
 
 const App = () => {
   const images = [
-    "https://via.placeholder.com/400x300?text=Image+1",
-    "https://via.placeholder.com/400x300?text=Image+2",
-    "https://via.placeholder.com/400x300?text=Image+3",
+  placeholder1, placeholder2, Placeholder
   ];
 
   return (
