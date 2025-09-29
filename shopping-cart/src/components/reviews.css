@@ -14,16 +14,18 @@
     border-top-right-radius: 25px;
     display: flex;
     flex-direction: column;
-
+    padding: 13px;
 }
 
 .image-container {
-  height: 200px;
+  max-height: 280px;
+  display: flex;
+  justify-content: center;
 }
 
 .review_card img {
-    border-radius: 50%;
-    
+    border-radius: 15px;
+    margin-bottom: 12px;
 }
 
 h4, h3 {
