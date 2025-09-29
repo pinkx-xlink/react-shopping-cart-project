@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import './animatedImages.css';
 import placeholder1 from './reviewImg/lady1.jpg';
 import placeholder2 from './reviewImg/guy.jpg';
-import './animatedCards.css';
+import './animatedImages.css';
 import { Placeholder } from "react-bootstrap";
 
 
