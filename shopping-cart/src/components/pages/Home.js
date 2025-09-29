@@ -2,6 +2,7 @@ import React from 'react'
 import Cards from '../Cards';
 import background from './img/stranger-background.jpg';
 import Reviews from '../Reviews';
+import AnimatedCardImages from '../Cards';
 
 function Home() {
     return (
@@ -14,7 +15,7 @@ function Home() {
             </div>
             
             
-            <Cards />
+            <AnimatedCardImages />
             <Reviews />
             
             <style>{`
