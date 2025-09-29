@@ -5,15 +5,6 @@ import axios from 'axios';
 import AnimatedImages from './AnimatedImages';
 // import WaterfallImg from "src/images/waterfall-img.jpg";
 
-import { useInView } from "react-intersection-observer";
-// import "./App.css"; // Import CSS for animations
-import './animatedImages.css';
-import placeholder from './reviewImg/lady.jpg';
-import placeholder1 from './reviewImg/lady1.jpg';
-import placeholder2 from './reviewImg/guy.jpg';
-import './animatedImages.css';
-
-
 const Cards = () => {
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState([]);
@@ -45,7 +36,7 @@ const Cards = () => {
         )}
 
 <div className='product-cards-container'>
-{data.slice(0, 5).map((product)=> (
+{data.slice(0, 3).map((product)=> (
     
     <div key={product.id} className="cards">
         {/* <h2>{product.title}</h2> */}
