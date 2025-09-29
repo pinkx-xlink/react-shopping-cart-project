@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-container {
+  margin: 20px 0;
+  opacity: 0;
+  transform: translateX(-100px); /* Start off-screen */
+  transition: all 0.8s ease-in-out;
+}
+
+.image-container.slide-in {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+}
+
+.image-container.hidden {
+  opacity: 0;
+  transform: translateX(-100px); /* Keep off-screen */
+}
