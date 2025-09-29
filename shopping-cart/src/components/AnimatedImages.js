@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import "./App.css"; // Import CSS for animations
-
+// import "./App.css"; // Import CSS for animations
+import './animatedImages.css';
 import placeholder1 from './reviewImg/lady1.jpg';
 import placeholder2 from './reviewImg/guy.jpg';
 import './animatedCards.css';
@@ -25,7 +25,7 @@ const ImageSlide = ({ src, alt }) => {
   );
 };
 
-const App = () => {
+const AnimatedImages = () => {
   const images = [
   placeholder1, placeholder2, Placeholder
   ];
@@ -40,4 +40,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default AnimatedImages;
