@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 //import "./App.css"; // Add your styles here
 import placeholder from './reviewImg/lady.jpg';
+import placeholder1 from './reviewImg/lady1.jpg';
+import placeholder2 from './reviewImg/guy.jpg';
 import './animatedCards.css';
 
 const AnimatedCards = () => {
@@ -16,10 +18,9 @@ sliderRef.current.scrollLeft += scrollAmount;
 };
 
 const images = [
-"https://via.placeholder.com/200",
-"https://via.placeholder.com/200",
-"https://via.placeholder.com/200",
-"https://via.placeholder.com/200",
+placeholder,
+placeholder1,
+placeholder2
 ];
 
 return (

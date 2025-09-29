@@ -1,9 +1,9 @@
-    App {
+.App {
 display: flex;
 align-items: center;
 }
 
-images-container {
+.images-container {
 display: flex;
 overflow-x: auto;
 scroll-behavior: smooth; 
@@ -16,7 +16,7 @@ height: auto;
 margin: 5px;
 }
 
-nav-btn {
+.nav-btn {
 background-color: #ccc;
 border: none;
 padding: 10px;
