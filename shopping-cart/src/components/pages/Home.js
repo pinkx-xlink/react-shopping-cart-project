@@ -15,7 +15,7 @@ function Home() {
             </div>
             
             
-            <AnimatedCardImages />
+            <Cards />
             <Reviews />
             
             <style>{`

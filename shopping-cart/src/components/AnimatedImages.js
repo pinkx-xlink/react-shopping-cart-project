@@ -6,6 +6,7 @@ import placeholder1 from './reviewImg/lady1.jpg';
 import placeholder2 from './reviewImg/guy.jpg';
 import './animatedImages.css';
 import { Placeholder } from "react-bootstrap";
+import CardItem from "./CardItem";
 
 
 const ImageSlide = ({ src, alt }) => {
@@ -23,7 +24,7 @@ const ImageSlide = ({ src, alt }) => {
       ref={ref}
       className={`image-container ${inView ? "slide-in" : "hidden"}`}
     >
-      <img src={src} alt={alt} />
+      <CardItem src={src} alt={alt} />
     </div>
   );
 };
