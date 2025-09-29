@@ -14,21 +14,23 @@
     border-top-right-radius: 25px;
     display: flex;
     flex-direction: column;
-    padding: 13px;
     width: 330px;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
-  height: 100%;
+  height: 250px;
   width: 100%;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .review_card img {
     border-radius: 15px;
     margin-bottom: 12px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 h4, h3 {
