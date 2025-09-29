@@ -53,3 +53,7 @@ SHOP:
 
 REVIEWS: 
 Photo by Ahmed ؜: https://www.pexels.com/photo/young-woman-by-galata-bridge-in-istanbul-33646928/
+
+Photo by Mwabonje Ringa: https://www.pexels.com/photo/photo-of-woman-wearing-headscarf-1820919/
+
+Photo by Italo Melo: https://www.pexels.com/photo/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-in-front-of-a-wall-2379004/
