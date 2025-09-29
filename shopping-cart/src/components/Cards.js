@@ -26,7 +26,7 @@ const Cards = () => {
     
   return (
     <>
-    <AnimatedImages />
+    
     <div className='products-container'>
         {loading && (
             <div> 

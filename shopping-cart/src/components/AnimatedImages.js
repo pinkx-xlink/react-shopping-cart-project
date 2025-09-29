@@ -15,6 +15,9 @@ const ImageSlide = ({ src, alt }) => {
     threshold: 0.1, // Trigger when 10% of the image is visible
   });
 
+
+  // Now, get the item details from Fake Store API
+
   return (
     <div
       ref={ref}
