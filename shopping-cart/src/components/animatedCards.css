@@ -1,0 +1,24 @@
+    App {
+display: flex;
+align-items: center;
+}
+
+images-container {
+display: flex;
+overflow-x: auto;
+scroll-behavior: smooth; 
+max-width: 600px;
+}
+
+image {
+width: 200px;
+height: auto;
+margin: 5px;
+}
+
+nav-btn {
+background-color: #ccc;
+border: none;
+padding: 10px;
+cursor: pointer;
+}

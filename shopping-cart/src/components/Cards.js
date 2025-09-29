@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import CardItem from './CardItem'
 import './Cards.css'
 import axios from 'axios';
-
+import AnimatedCards from './AnimatedCards';
 // import WaterfallImg from "src/images/waterfall-img.jpg";
 
 const Cards = () => {
@@ -26,6 +26,7 @@ const Cards = () => {
     
   return (
     <>
+    <AnimatedCards />
     <div className='products-container'>
         {loading && (
             <div> 
