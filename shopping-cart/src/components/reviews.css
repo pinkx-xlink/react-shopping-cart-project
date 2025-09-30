@@ -31,13 +31,13 @@
   width: 250px;
   height: 250px;
   overflow: hidden;
-  border-radius: 90%;
+  border-radius: 100%;
 }
 
 .review_card img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
 }
 
 h4, h3 {
