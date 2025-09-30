@@ -11,7 +11,25 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
+  animation: slideIn 0.9s ease-in-out forwards;
 }
+
+
+.box {
+     
+      background-color: #e74c3c;
+       /* Trigger animation */
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%); /* Start off-screen */
+      }
+      to {
+        transform: translateX(0); /* End at original position */
+      }
+    }
+
 
 .greeting {
   color: black;
