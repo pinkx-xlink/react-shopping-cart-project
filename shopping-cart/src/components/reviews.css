@@ -1,7 +1,7 @@
 .reviews_container {
     background-color: #14213d;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -13,8 +13,16 @@
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
     display: flex;
-    flex-direction: column;
-    width: 330px;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.image-container_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .image-container {
@@ -23,6 +31,7 @@
   height: 250px;
   width: 100%;
   overflow: hidden;
+  margin-left: -20px;
 }
 
 .review_card img {
@@ -31,6 +40,7 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+    margin-left: 0;
 }
 
 h4, h3 {
