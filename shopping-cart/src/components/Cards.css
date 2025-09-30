@@ -19,6 +19,8 @@ h1 {
 
 .cards {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .slideshow-container {
@@ -64,10 +66,10 @@ img {
 
 .cards__wrapper {
   width: 60%;
-  height: 500px;
+  height: 400px;
 	aspect-ratio: 1;
 	position: relative;
-	margin: auto;
+	margin: 5px 0 5px;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
@@ -88,20 +90,17 @@ img {
   
   .cards__container {
     display: flex;
+    
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0 auto;
   }
   
-  .cards__wrapper {
-    position: relative;
-    margin: 5px 0 5px;
-  }
-  
   .cards__items {
     margin-bottom: 4px;
-    
+    display: flex;
+    flex-direction: column;
   }
   
   .cards__item {
