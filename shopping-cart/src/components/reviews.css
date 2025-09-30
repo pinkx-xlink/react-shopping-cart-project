@@ -28,19 +28,16 @@
 .image-container {
   display: flex;
   justify-content: center;
+  width: 250px;
   height: 250px;
-  width: 100%;
   overflow: hidden;
-  margin-left: -20px;
+  border-radius: 90%;
 }
 
 .review_card img {
-    border-radius: 15px;
-    margin-bottom: 12px;
     height: 100%;
     width: 100%;
     object-fit: contain;
-    margin-left: 0;
 }
 
 h4, h3 {
