@@ -15,7 +15,7 @@ function Home() {
             </div>
             
             
-            <Cards />
+            {/* <Cards /> */}
             <Reviews />
             
             <style>{`
