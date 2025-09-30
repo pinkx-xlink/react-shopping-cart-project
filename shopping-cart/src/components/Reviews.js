@@ -21,13 +21,14 @@ const Reviews = () => {
             </div>
 
             <div className='review_card'>
-                <div className='image-container'>
-                    <img src={image2} alt="Lady leaning on railing above the water"></img>
-                </div>
+                
                 <div className="image-container_text">
                     <h3>"I've been ordering from FakeShop for years. My favorite place to buy jewelry!"</h3>
                     <p>⭐⭐⭐⭐⭐</p>
                     <h4> - Genevieve </h4>
+                </div>
+                <div className='image-container'>
+                    <img src={image2} alt="Lady leaning on railing above the water"></img>
                 </div>
             </div>
             <div className='review_card'>
